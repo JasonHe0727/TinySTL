@@ -33,6 +33,21 @@ private:
     T* items;
     void Expand();
 };
+
+template <typename T>
+class StackIterator
+{
+public:
+    StackIterator(Stack<T>& stack, int index);
+    StackIterator<T>& operator++();
+    bool operator!=(StackIterator<T>& other);
+    T& operator*() const;
+
+private:
+    Stack<T>& stack;
+    int index;
+};
+
 template <typename T>
 Stack<T>::Stack() : capacity{0}, pointer{-1}, items{nullptr}
 {
@@ -149,19 +164,6 @@ void Stack<T>::Expand()
     }
 }
 
-template <typename T>
-class StackIterator
-{
-public:
-    StackIterator(Stack<T>& stack, int index);
-    StackIterator<T>& operator++();
-    bool operator!=(StackIterator<T>& other);
-    T& operator*() const;
-
-private:
-    Stack<T>& stack;
-    int index;
-};
 template <typename T>
 StackIterator<T>::StackIterator(Stack<T>& stack, int index)
     : stack{stack}, index{index}

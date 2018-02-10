@@ -37,6 +37,20 @@ private:
 };
 
 template <typename T>
+class QueueIterator
+{
+public:
+    QueueIterator(Queue<T>& queue, int index);
+    QueueIterator<T>& operator++();
+    bool operator!=(QueueIterator<T>& other);
+    T& operator*() const;
+
+private:
+    Queue<T>& queue;
+    int index;
+};
+
+template <typename T>
 Queue<T>::Queue() : capacity{0}, front{0}, rear{0}, items{nullptr}
 {
 }
@@ -176,19 +190,6 @@ void Queue<T>::Expand()
     }
 }
 
-template <typename T>
-class QueueIterator
-{
-public:
-    QueueIterator(Queue<T>& queue, int index);
-    QueueIterator<T>& operator++();
-    bool operator!=(QueueIterator<T>& other);
-    T& operator*() const;
-
-private:
-    Queue<T>& queue;
-    int index;
-};
 template <typename T>
 QueueIterator<T>::QueueIterator(Queue<T>& queue, int index)
     : queue{queue}, index{index}

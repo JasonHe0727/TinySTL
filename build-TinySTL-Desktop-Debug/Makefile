@@ -52,10 +52,14 @@ OBJECTS_DIR   = ./
 
 SOURCES       = ../TinySTL/main.cpp \
 		../TinySTL/Exception.cpp \
-		../TinySTL/Test.cpp 
+		../TinySTL/Test.cpp \
+		../TinySTL/ConvexHull.cpp \
+		../TinySTL/Dictionary.cpp 
 OBJECTS       = main.o \
 		Exception.o \
-		Test.o
+		Test.o \
+		ConvexHull.o \
+		Dictionary.o
 DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/common/unix.conf \
 		/usr/lib/qt/mkspecs/common/linux.conf \
@@ -65,11 +69,6 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/common/g++-base.conf \
 		/usr/lib/qt/mkspecs/common/g++-unix.conf \
 		/usr/lib/qt/mkspecs/qconfig.pri \
-		/usr/lib/qt/mkspecs/modules/qt_AkonadiAgentBase.pri \
-		/usr/lib/qt/mkspecs/modules/qt_AkonadiCore.pri \
-		/usr/lib/qt/mkspecs/modules/qt_AkonadiNotes.pri \
-		/usr/lib/qt/mkspecs/modules/qt_AkonadiWidgets.pri \
-		/usr/lib/qt/mkspecs/modules/qt_AkonadiXml.pri \
 		/usr/lib/qt/mkspecs/modules/qt_Attica.pri \
 		/usr/lib/qt/mkspecs/modules/qt_BluezQt.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KActivities.pri \
@@ -77,17 +76,12 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/modules/qt_KArchive.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KAuth.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KBookmarks.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KCalCore.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KCalUtils.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KCddb.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KChart.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KCMUtils.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KCodecs.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KCompletion.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KConfigCore.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KConfigGui.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KConfigWidgets.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KContacts.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KCoreAddons.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KCrash.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KDBusAddons.pri \
@@ -95,14 +89,12 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/modules/qt_KDESu.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KDNSSD.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KEmoticons.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KGantt.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KGlobalAccel.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KGuiAddons.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KHolidays.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KHtml.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KI18n.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KIconThemes.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KIdentityManagement.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KIdleTime.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KIOCore.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KIOFileWidgets.pri \
@@ -115,7 +107,6 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/modules/qt_KJS.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KJSApi.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KJsEmbed.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KMime.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KNewStuff.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KNewStuffCore.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KNotifications.pri \
@@ -124,8 +115,6 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/modules/qt_KParts.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KPeople.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KPeopleWidgets.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KPIMTextEdit.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KPlotting.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KPty.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KRunner.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KScreen.pri \
@@ -241,7 +230,6 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/modules/qt_lib_xml_private.pri \
 		/usr/lib/qt/mkspecs/modules/qt_lib_xmlpatterns.pri \
 		/usr/lib/qt/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
-		/usr/lib/qt/mkspecs/modules/qt_Libkleo.pri \
 		/usr/lib/qt/mkspecs/modules/qt_ModemManagerQt.pri \
 		/usr/lib/qt/mkspecs/modules/qt_NetworkManagerQt.pri \
 		/usr/lib/qt/mkspecs/modules/qt_phonon4qt5.pri \
@@ -275,9 +263,20 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		Stack.hpp \
 		Dictionary.hpp \
 		Test.hpp \
-		Sorting.hpp ../TinySTL/main.cpp \
+		Sorting.hpp \
+		Array.hpp \
+		ConvexHull.hpp \
+		SinglyLinkedList.hpp \
+		Selection.hpp \
+		Functional.hpp \
+		BinaryMaxHeap.hpp \
+		BinarySearchTree.hpp \
+		Tuple.hpp \
+		KeyValuePair.hpp ../TinySTL/main.cpp \
 		../TinySTL/Exception.cpp \
-		../TinySTL/Test.cpp
+		../TinySTL/Test.cpp \
+		../TinySTL/ConvexHull.cpp \
+		../TinySTL/Dictionary.cpp
 QMAKE_TARGET  = TinySTL
 DESTDIR       = 
 TARGET        = TinySTL
@@ -298,11 +297,6 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 		/usr/lib/qt/mkspecs/common/g++-base.conf \
 		/usr/lib/qt/mkspecs/common/g++-unix.conf \
 		/usr/lib/qt/mkspecs/qconfig.pri \
-		/usr/lib/qt/mkspecs/modules/qt_AkonadiAgentBase.pri \
-		/usr/lib/qt/mkspecs/modules/qt_AkonadiCore.pri \
-		/usr/lib/qt/mkspecs/modules/qt_AkonadiNotes.pri \
-		/usr/lib/qt/mkspecs/modules/qt_AkonadiWidgets.pri \
-		/usr/lib/qt/mkspecs/modules/qt_AkonadiXml.pri \
 		/usr/lib/qt/mkspecs/modules/qt_Attica.pri \
 		/usr/lib/qt/mkspecs/modules/qt_BluezQt.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KActivities.pri \
@@ -310,17 +304,12 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 		/usr/lib/qt/mkspecs/modules/qt_KArchive.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KAuth.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KBookmarks.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KCalCore.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KCalUtils.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KCddb.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KChart.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KCMUtils.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KCodecs.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KCompletion.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KConfigCore.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KConfigGui.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KConfigWidgets.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KContacts.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KCoreAddons.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KCrash.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KDBusAddons.pri \
@@ -328,14 +317,12 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 		/usr/lib/qt/mkspecs/modules/qt_KDESu.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KDNSSD.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KEmoticons.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KGantt.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KGlobalAccel.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KGuiAddons.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KHolidays.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KHtml.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KI18n.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KIconThemes.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KIdentityManagement.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KIdleTime.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KIOCore.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KIOFileWidgets.pri \
@@ -348,7 +335,6 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 		/usr/lib/qt/mkspecs/modules/qt_KJS.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KJSApi.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KJsEmbed.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KMime.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KNewStuff.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KNewStuffCore.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KNotifications.pri \
@@ -357,8 +343,6 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 		/usr/lib/qt/mkspecs/modules/qt_KParts.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KPeople.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KPeopleWidgets.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KPIMTextEdit.pri \
-		/usr/lib/qt/mkspecs/modules/qt_KPlotting.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KPty.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KRunner.pri \
 		/usr/lib/qt/mkspecs/modules/qt_KScreen.pri \
@@ -474,7 +458,6 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 		/usr/lib/qt/mkspecs/modules/qt_lib_xml_private.pri \
 		/usr/lib/qt/mkspecs/modules/qt_lib_xmlpatterns.pri \
 		/usr/lib/qt/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
-		/usr/lib/qt/mkspecs/modules/qt_Libkleo.pri \
 		/usr/lib/qt/mkspecs/modules/qt_ModemManagerQt.pri \
 		/usr/lib/qt/mkspecs/modules/qt_NetworkManagerQt.pri \
 		/usr/lib/qt/mkspecs/modules/qt_phonon4qt5.pri \
@@ -513,11 +496,6 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 /usr/lib/qt/mkspecs/common/g++-base.conf:
 /usr/lib/qt/mkspecs/common/g++-unix.conf:
 /usr/lib/qt/mkspecs/qconfig.pri:
-/usr/lib/qt/mkspecs/modules/qt_AkonadiAgentBase.pri:
-/usr/lib/qt/mkspecs/modules/qt_AkonadiCore.pri:
-/usr/lib/qt/mkspecs/modules/qt_AkonadiNotes.pri:
-/usr/lib/qt/mkspecs/modules/qt_AkonadiWidgets.pri:
-/usr/lib/qt/mkspecs/modules/qt_AkonadiXml.pri:
 /usr/lib/qt/mkspecs/modules/qt_Attica.pri:
 /usr/lib/qt/mkspecs/modules/qt_BluezQt.pri:
 /usr/lib/qt/mkspecs/modules/qt_KActivities.pri:
@@ -525,17 +503,12 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 /usr/lib/qt/mkspecs/modules/qt_KArchive.pri:
 /usr/lib/qt/mkspecs/modules/qt_KAuth.pri:
 /usr/lib/qt/mkspecs/modules/qt_KBookmarks.pri:
-/usr/lib/qt/mkspecs/modules/qt_KCalCore.pri:
-/usr/lib/qt/mkspecs/modules/qt_KCalUtils.pri:
-/usr/lib/qt/mkspecs/modules/qt_KCddb.pri:
-/usr/lib/qt/mkspecs/modules/qt_KChart.pri:
 /usr/lib/qt/mkspecs/modules/qt_KCMUtils.pri:
 /usr/lib/qt/mkspecs/modules/qt_KCodecs.pri:
 /usr/lib/qt/mkspecs/modules/qt_KCompletion.pri:
 /usr/lib/qt/mkspecs/modules/qt_KConfigCore.pri:
 /usr/lib/qt/mkspecs/modules/qt_KConfigGui.pri:
 /usr/lib/qt/mkspecs/modules/qt_KConfigWidgets.pri:
-/usr/lib/qt/mkspecs/modules/qt_KContacts.pri:
 /usr/lib/qt/mkspecs/modules/qt_KCoreAddons.pri:
 /usr/lib/qt/mkspecs/modules/qt_KCrash.pri:
 /usr/lib/qt/mkspecs/modules/qt_KDBusAddons.pri:
@@ -543,14 +516,12 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 /usr/lib/qt/mkspecs/modules/qt_KDESu.pri:
 /usr/lib/qt/mkspecs/modules/qt_KDNSSD.pri:
 /usr/lib/qt/mkspecs/modules/qt_KEmoticons.pri:
-/usr/lib/qt/mkspecs/modules/qt_KGantt.pri:
 /usr/lib/qt/mkspecs/modules/qt_KGlobalAccel.pri:
 /usr/lib/qt/mkspecs/modules/qt_KGuiAddons.pri:
 /usr/lib/qt/mkspecs/modules/qt_KHolidays.pri:
 /usr/lib/qt/mkspecs/modules/qt_KHtml.pri:
 /usr/lib/qt/mkspecs/modules/qt_KI18n.pri:
 /usr/lib/qt/mkspecs/modules/qt_KIconThemes.pri:
-/usr/lib/qt/mkspecs/modules/qt_KIdentityManagement.pri:
 /usr/lib/qt/mkspecs/modules/qt_KIdleTime.pri:
 /usr/lib/qt/mkspecs/modules/qt_KIOCore.pri:
 /usr/lib/qt/mkspecs/modules/qt_KIOFileWidgets.pri:
@@ -563,7 +534,6 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 /usr/lib/qt/mkspecs/modules/qt_KJS.pri:
 /usr/lib/qt/mkspecs/modules/qt_KJSApi.pri:
 /usr/lib/qt/mkspecs/modules/qt_KJsEmbed.pri:
-/usr/lib/qt/mkspecs/modules/qt_KMime.pri:
 /usr/lib/qt/mkspecs/modules/qt_KNewStuff.pri:
 /usr/lib/qt/mkspecs/modules/qt_KNewStuffCore.pri:
 /usr/lib/qt/mkspecs/modules/qt_KNotifications.pri:
@@ -572,8 +542,6 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 /usr/lib/qt/mkspecs/modules/qt_KParts.pri:
 /usr/lib/qt/mkspecs/modules/qt_KPeople.pri:
 /usr/lib/qt/mkspecs/modules/qt_KPeopleWidgets.pri:
-/usr/lib/qt/mkspecs/modules/qt_KPIMTextEdit.pri:
-/usr/lib/qt/mkspecs/modules/qt_KPlotting.pri:
 /usr/lib/qt/mkspecs/modules/qt_KPty.pri:
 /usr/lib/qt/mkspecs/modules/qt_KRunner.pri:
 /usr/lib/qt/mkspecs/modules/qt_KScreen.pri:
@@ -689,7 +657,6 @@ Makefile: ../TinySTL/TinySTL.pro /usr/lib/qt/mkspecs/linux-g++/qmake.conf /usr/l
 /usr/lib/qt/mkspecs/modules/qt_lib_xml_private.pri:
 /usr/lib/qt/mkspecs/modules/qt_lib_xmlpatterns.pri:
 /usr/lib/qt/mkspecs/modules/qt_lib_xmlpatterns_private.pri:
-/usr/lib/qt/mkspecs/modules/qt_Libkleo.pri:
 /usr/lib/qt/mkspecs/modules/qt_ModemManagerQt.pri:
 /usr/lib/qt/mkspecs/modules/qt_NetworkManagerQt.pri:
 /usr/lib/qt/mkspecs/modules/qt_phonon4qt5.pri:
@@ -772,13 +739,24 @@ Exception.o: ../TinySTL/Exception.cpp ../TinySTL/Exception.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Exception.o ../TinySTL/Exception.cpp
 
 Test.o: ../TinySTL/Test.cpp ../TinySTL/Test.hpp \
+		../TinySTL/Array.hpp \
+		../TinySTL/BinaryMaxHeap.hpp \
+		../TinySTL/KeyValuePair.hpp \
+		../TinySTL/List.hpp \
 		../TinySTL/Dictionary.hpp \
 		../TinySTL/Exception.h \
-		../TinySTL/List.hpp \
+		../TinySTL/Functional.hpp \
 		../TinySTL/Queue.hpp \
+		../TinySTL/Selection.hpp \
 		../TinySTL/Sorting.hpp \
 		../TinySTL/Stack.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Test.o ../TinySTL/Test.cpp
+
+ConvexHull.o: ../TinySTL/ConvexHull.cpp ../TinySTL/ConvexHull.hpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ConvexHull.o ../TinySTL/ConvexHull.cpp
+
+Dictionary.o: ../TinySTL/Dictionary.cpp ../TinySTL/Dictionary.hpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Dictionary.o ../TinySTL/Dictionary.cpp
 
 ####### Install
 

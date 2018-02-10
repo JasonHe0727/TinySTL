@@ -27,6 +27,7 @@ public:
     void Clear();
     int IndexOf(T item);
     T& At(int index) const;
+    void Pop();
     ListIterator<T> begin();
     ListIterator<T> end();
     friend class ListIterator<T>;
@@ -36,6 +37,20 @@ private:
     int count;
     T* items;
     void Expand();
+};
+
+template <typename T>
+class ListIterator
+{
+public:
+    ListIterator(List<T>& list, int index);
+    ListIterator<T>& operator++();
+    bool operator!=(ListIterator<T>& other);
+    T& operator*() const;
+
+private:
+    List<T>& list;
+    int index;
 };
 
 template <typename T>
@@ -164,6 +179,12 @@ T& List<T>::At(int index) const
 }
 
 template <typename T>
+void List<T>::Pop()
+{
+    count--;
+}
+
+template <typename T>
 ListIterator<T> List<T>::begin()
 {
     return ListIterator<T>(*this, 0);
@@ -197,19 +218,6 @@ void List<T>::Expand()
     }
 }
 
-template <typename T>
-class ListIterator
-{
-public:
-    ListIterator(List<T>& list, int index);
-    ListIterator& operator++();
-    bool operator!=(ListIterator& other);
-    T& operator*() const;
-
-private:
-    List<T>& list;
-    int index;
-};
 template <typename T>
 ListIterator<T>::ListIterator(List<T>& list, int index)
     : list{list}, index{index}

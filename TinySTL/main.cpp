@@ -9,6 +9,6 @@ using namespace std;
 
 int main()
 {
-    TestSelectionSort();
+    TestBinaryMaxHeap();
     return 0;
 }
