@@ -6,11 +6,9 @@ CONFIG -= qt
 SOURCES += main.cpp \
     Exception.cpp \
     Test.cpp \
-    ConvexHull.cpp \
     Dictionary.cpp
 
 HEADERS += \
-    Exception.h \
     List.hpp \
     Queue.hpp \
     Stack.hpp \
@@ -18,12 +16,11 @@ HEADERS += \
     Test.hpp \
     Sorting.hpp \
     Array.hpp \
-    ConvexHull.hpp \
     SinglyLinkedList.hpp \
     Selection.hpp \
     Functional.hpp \
     BinaryMaxHeap.hpp \
     BinarySearchTree.hpp \
-    Tuple.hpp \
     KeyValuePair.hpp \
-    RedBlackBST.hpp
+    RedBlackBST.hpp \
+    Exception.hpp

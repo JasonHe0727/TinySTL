@@ -53,12 +53,10 @@ OBJECTS_DIR   = ./
 SOURCES       = ../TinySTL/main.cpp \
 		../TinySTL/Exception.cpp \
 		../TinySTL/Test.cpp \
-		../TinySTL/ConvexHull.cpp \
 		../TinySTL/Dictionary.cpp 
 OBJECTS       = main.o \
 		Exception.o \
 		Test.o \
-		ConvexHull.o \
 		Dictionary.o
 DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/common/unix.conf \
@@ -257,25 +255,23 @@ DIST          = /usr/lib/qt/mkspecs/features/spec_pre.prf \
 		/usr/lib/qt/mkspecs/features/exceptions.prf \
 		/usr/lib/qt/mkspecs/features/yacc.prf \
 		/usr/lib/qt/mkspecs/features/lex.prf \
-		../TinySTL/TinySTL.pro Exception.h \
-		List.hpp \
+		../TinySTL/TinySTL.pro List.hpp \
 		Queue.hpp \
 		Stack.hpp \
 		Dictionary.hpp \
 		Test.hpp \
 		Sorting.hpp \
 		Array.hpp \
-		ConvexHull.hpp \
 		SinglyLinkedList.hpp \
 		Selection.hpp \
 		Functional.hpp \
 		BinaryMaxHeap.hpp \
 		BinarySearchTree.hpp \
-		Tuple.hpp \
-		KeyValuePair.hpp ../TinySTL/main.cpp \
+		KeyValuePair.hpp \
+		RedBlackBST.hpp \
+		Exception.hpp ../TinySTL/main.cpp \
 		../TinySTL/Exception.cpp \
 		../TinySTL/Test.cpp \
-		../TinySTL/ConvexHull.cpp \
 		../TinySTL/Dictionary.cpp
 QMAKE_TARGET  = TinySTL
 DESTDIR       = 
@@ -729,22 +725,24 @@ compiler_clean:
 ####### Compile
 
 main.o: ../TinySTL/main.cpp ../TinySTL/Dictionary.hpp \
+		../TinySTL/Exception.hpp \
 		../TinySTL/List.hpp \
 		../TinySTL/Queue.hpp \
 		../TinySTL/Stack.hpp \
 		../TinySTL/Test.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../TinySTL/main.cpp
 
-Exception.o: ../TinySTL/Exception.cpp ../TinySTL/Exception.h
+Exception.o: ../TinySTL/Exception.cpp ../TinySTL/Exception.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Exception.o ../TinySTL/Exception.cpp
 
 Test.o: ../TinySTL/Test.cpp ../TinySTL/Test.hpp \
 		../TinySTL/Array.hpp \
+		../TinySTL/Exception.hpp \
 		../TinySTL/BinaryMaxHeap.hpp \
 		../TinySTL/KeyValuePair.hpp \
 		../TinySTL/List.hpp \
+		../TinySTL/BinarySearchTree.hpp \
 		../TinySTL/Dictionary.hpp \
-		../TinySTL/Exception.h \
 		../TinySTL/Functional.hpp \
 		../TinySTL/Queue.hpp \
 		../TinySTL/Selection.hpp \
@@ -752,10 +750,8 @@ Test.o: ../TinySTL/Test.cpp ../TinySTL/Test.hpp \
 		../TinySTL/Stack.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Test.o ../TinySTL/Test.cpp
 
-ConvexHull.o: ../TinySTL/ConvexHull.cpp ../TinySTL/ConvexHull.hpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ConvexHull.o ../TinySTL/ConvexHull.cpp
-
-Dictionary.o: ../TinySTL/Dictionary.cpp ../TinySTL/Dictionary.hpp
+Dictionary.o: ../TinySTL/Dictionary.cpp ../TinySTL/Dictionary.hpp \
+		../TinySTL/Exception.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Dictionary.o ../TinySTL/Dictionary.cpp
 
 ####### Install

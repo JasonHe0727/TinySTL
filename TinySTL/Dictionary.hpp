@@ -1,5 +1,7 @@
 #ifndef DICTIONARY_H
 #define DICTIONARY_H
+#include "Exception.hpp"
+#include <string>
 template <typename TKey, typename TValue>
 class Dictionary;
 template <typename TKey, typename TValue>
@@ -8,6 +10,8 @@ template <typename TKey, typename TValue>
 class DictionaryIterator;
 
 int GetHashCode(int key);
+int GetHashCode(long key);
+int GetHashCode(const std::string& key);
 
 template <typename TKey, typename TValue>
 class Dictionary
@@ -84,14 +88,18 @@ private:
 };
 
 template <typename TKey, typename TValue>
-Dictionary<TKey, TValue>::Dictionary() : capacity{0}, count{0}, items{nullptr}
+Dictionary<TKey, TValue>::Dictionary()
+    : capacity{0}
+    , count{0}
+    , items{nullptr}
 {
 }
 
 template <typename TKey, typename TValue>
 Dictionary<TKey, TValue>::Dictionary(int capacity)
-    : capacity{0}, count{0},
-      items{new DictionaryKeyValuePair<TKey, TValue>*[capacity]}
+    : capacity{0}
+    , count{0}
+    , items{new DictionaryKeyValuePair<TKey, TValue>*[capacity]}
 {
     for (int i = 0; i < capacity; i++)
     {
@@ -117,8 +125,9 @@ Dictionary<TKey, TValue>::~Dictionary()
 
 template <typename TKey, typename TValue>
 Dictionary<TKey, TValue>::Dictionary(const Dictionary<TKey, TValue>& other)
-    : capacity{other.capacity}, count{other.count},
-      items{new TValue[other.capacity]}
+    : capacity{other.capacity}
+    , count{other.count}
+    , items{new TValue[other.capacity]}
 {
     for (int i = 0; i < other.capacity; i++)
     {
@@ -149,7 +158,9 @@ Dictionary<TKey, TValue>& Dictionary<TKey, TValue>::
 
 template <typename TKey, typename TValue>
 Dictionary<TKey, TValue>::Dictionary(Dictionary<TKey, TValue>&& other)
-    : capacity{other.capacity}, count{other.count}, items{other.items}
+    : capacity{other.capacity}
+    , count{other.count}
+    , items{other.items}
 {
     other.items = nullptr;
 }
@@ -181,7 +192,7 @@ void Dictionary<TKey, TValue>::Remove(TKey key)
     DictionaryKeyValuePair<TKey, TValue>* current = items[index];
     if (current == nullptr)
     {
-        throw "key is not found";
+        throw KeyNotFoundException();
     }
     else if (current->key == key)
     {
@@ -296,7 +307,7 @@ void Dictionary<TKey, TValue>::AddToItems(
     }
     else if (current->key == key)
     {
-        throw "duplicative key";
+        throw ArgumentException(L"duplicative key");
     }
     else
     {
@@ -305,7 +316,7 @@ void Dictionary<TKey, TValue>::AddToItems(
             current = current->next;
             if (current->key == key)
             {
-                throw "duplicative key";
+                throw ArgumentException(L"duplicative key");
             }
         }
         current->next =
@@ -354,7 +365,9 @@ void Dictionary<TKey, TValue>::Expand()
 template <typename TKey, typename TValue>
 DictionaryKeyValuePair<TKey, TValue>::DictionaryKeyValuePair(
     TKey key, TValue value, DictionaryKeyValuePair* next)
-    : key{key}, value{value}, next{next}
+    : key{key}
+    , value{value}
+    , next{next}
 {
 }
 
@@ -382,7 +395,9 @@ const TValue& DictionaryKeyValuePair<TKey, TValue>::Value() const
 template <typename TKey, typename TValue>
 DictionaryKeyValuePair<TKey, TValue>::DictionaryKeyValuePair(
     DictionaryKeyValuePair<TKey, TValue>&& other)
-    : key{other.key}, value{other.value}, next{other.next}
+    : key{other.key}
+    , value{other.value}
+    , next{other.next}
 {
     other.next = nullptr;
 }
@@ -402,7 +417,9 @@ template <typename TKey, typename TValue>
 DictionaryIterator<TKey, TValue>::DictionaryIterator(
     Dictionary<TKey, TValue>& dictionary, int index,
     DictionaryKeyValuePair<TKey, TValue>* current)
-    : dictionary{dictionary}, index{index}, current{current}
+    : dictionary{dictionary}
+    , index{index}
+    , current{current}
 {
 }
 
@@ -458,7 +475,7 @@ DictionaryKeyValuePair<TKey, TValue>& DictionaryIterator<TKey, TValue>::
 {
     if (index == -1)
     {
-        throw "cannot get key value pair";
+        throw ArgumentException(L"cannot get key value pair");
     }
     else
     {

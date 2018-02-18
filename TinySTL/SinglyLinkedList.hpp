@@ -21,12 +21,14 @@ private:
 };
 
 template <typename T>
-SinglyLinkedList::SinglyLinkedList() : head{nullptr}, tail{nullptr}
+SinglyLinkedList<T>::SinglyLinkedList()
+    : head{nullptr}
+    , tail{nullptr}
 {
 }
 
 template <typename T>
-SinglyLinkedList::~SinglyLinkedList()
+SinglyLinkedList<T>::~SinglyLinkedList()
 {
     SinglyLinkedListNode<T>* current = head;
     while (current != nullptr)
@@ -49,10 +51,12 @@ private:
 };
 
 template <typename T>
-SinglyLinkedListNode::SinglyLinkedListNode(T value,
-                                           SinglyLinkedListNode<T>& previous,
-                                           SinglyLinkedListNode<T>* next)
-    : value{value}, previous{previous}, next{next}
+SinglyLinkedListNode<T>::SinglyLinkedListNode(T value,
+                                              SinglyLinkedListNode<T>& previous,
+                                              SinglyLinkedListNode<T>* next)
+    : value{value}
+    , previous{previous}
+    , next{next}
 {
 }
 

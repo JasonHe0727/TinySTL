@@ -1,7 +1,7 @@
 #ifndef BINARYSEARCHTREE_HPP
 #define BINARYSEARCHTREE_HPP
+#include "Exception.hpp"
 #include "KeyValuePair.hpp"
-
 template <typename TKey, typename TValue>
 class BinarySearchTree;
 template <typename TKey, typename TValue>
@@ -46,7 +46,8 @@ private:
     BSTNode<TKey, TValue>* right;
 };
 template <typename TKey, typename TValue>
-BinarySearchTree<TKey, TValue>::BinarySearchTree() : root{nullptr}
+BinarySearchTree<TKey, TValue>::BinarySearchTree()
+    : root{nullptr}
 {
 }
 
@@ -84,7 +85,7 @@ TValue& BinarySearchTree<TKey, TValue>::At(TKey key)
             return current->value;
         }
     }
-    throw "key does not exist";
+    throw KeyNotFoundException();
 }
 
 template <typename TKey, typename TValue>
@@ -93,7 +94,7 @@ KeyValuePair<TKey, TValue> BinarySearchTree<TKey, TValue>::Floor(TKey key)
     BSTNode<TKey, TValue>* result = Floor(root, key);
     if (result == nullptr)
     {
-        throw "There is no key that smaller than given key";
+        throw ArgumentException(L"There is no key that smaller than given key");
     }
     else
     {
@@ -158,7 +159,7 @@ BSTNode<TKey, TValue>*
         }
         else
         {
-            throw "The key already exists";
+            throw ArgumentException(L"The key already exists");
         }
     }
 }
@@ -262,7 +263,10 @@ template <typename TKey, typename TValue>
 BSTNode<TKey, TValue>::BSTNode(TKey key, TValue value,
                                BSTNode<TKey, TValue>* left,
                                BSTNode<TKey, TValue>* right)
-    : key{key}, value{value}, left{left}, right{right}
+    : key{key}
+    , value{value}
+    , left{left}
+    , right{right}
 {
 }
 

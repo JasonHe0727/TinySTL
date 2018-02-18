@@ -1,6 +1,6 @@
 #ifndef QUEUE_H
 #define QUEUE_H
-
+#include "Exception.hpp"
 template <typename T>
 class Queue;
 template <typename T>
@@ -51,7 +51,11 @@ private:
 };
 
 template <typename T>
-Queue<T>::Queue() : capacity{0}, front{0}, rear{0}, items{nullptr}
+Queue<T>::Queue()
+    : capacity{0}
+    , front{0}
+    , rear{0}
+    , items{nullptr}
 {
 }
 
@@ -66,8 +70,10 @@ Queue<T>::~Queue()
 
 template <typename T>
 Queue<T>::Queue(const Queue<T>& other)
-    : capacity{other.capacity}, front{other.front}, rear{other.rear},
-      items{new T[other.capacity]}
+    : capacity{other.capacity}
+    , front{other.front}
+    , rear{other.rear}
+    , items{new T[other.capacity]}
 {
     for (int i = 0; i < other.capacity; i++)
     {
@@ -90,8 +96,10 @@ Queue<T>& Queue<T>::operator=(const Queue<T>& other)
 
 template <typename T>
 Queue<T>::Queue(Queue<T>&& other)
-    : capacity{other.capacity}, front{other.front}, rear{other.rear},
-      items{other.items}
+    : capacity{other.capacity}
+    , front{other.front}
+    , rear{other.rear}
+    , items{other.items}
 {
     other.items = nullptr;
 }
@@ -122,7 +130,7 @@ T Queue<T>::Dequeue()
 {
     if (IsEmpty())
     {
-        throw "The queue is empty";
+        throw InvalidOperationException(L"The queue is empty");
     }
     else
     {
@@ -192,7 +200,8 @@ void Queue<T>::Expand()
 
 template <typename T>
 QueueIterator<T>::QueueIterator(Queue<T>& queue, int index)
-    : queue{queue}, index{index}
+    : queue{queue}
+    , index{index}
 {
 }
 

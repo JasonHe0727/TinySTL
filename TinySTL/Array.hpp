@@ -1,5 +1,6 @@
 #ifndef ARRAY_H
 #define ARRAY_H
+#include <Exception.hpp>
 #include <initializer_list>
 template <typename T>
 class Array;
@@ -48,7 +49,9 @@ private:
 };
 
 template <typename T>
-Array<T>::Array() : length{0}, items{nullptr}
+Array<T>::Array()
+    : length{0}
+    , items{nullptr}
 {
 }
 
@@ -62,13 +65,16 @@ Array<T>::~Array()
 }
 
 template <typename T>
-Array<T>::Array(int length) : length{length}, items{new T[length]}
+Array<T>::Array(int length)
+    : length{length}
+    , items{new T[length]}
 {
 }
 
 template <typename T>
 Array<T>::Array(std::initializer_list<T> args)
-    : length{static_cast<int>(args.size())}, items{new T[length]}
+    : length{static_cast<int>(args.size())}
+    , items{new T[length]}
 {
 	int i = 0;
     for (T item : args)
@@ -80,7 +86,8 @@ Array<T>::Array(std::initializer_list<T> args)
 
 template <typename T>
 Array<T>::Array(const Array<T>& other)
-    : length{other.length}, items{new T[length]}
+    : length{other.length}
+    , items{new T[length]}
 {
     for (int i = 0; i < length; i++)
 	{
@@ -100,7 +107,9 @@ Array<T>& Array<T>::operator=(const Array<T>& other)
 }
 
 template <typename T>
-Array<T>::Array(Array<T>&& other) : length{other.length}, items{other.items}
+Array<T>::Array(Array<T>&& other)
+    : length{other.length}
+    , items{other.items}
 {
     other.items = nullptr;
 }
@@ -135,7 +144,7 @@ T& Array<T>::At(int index) const
 	}
 	else
 	{
-        throw "index out of range";
+        throw IndexOutOfRangeException();
 	}
 }
 
@@ -153,7 +162,8 @@ ArrayIterator<T> Array<T>::end()
 
 template <typename T>
 ArrayIterator<T>::ArrayIterator(Array<T>& array, int index)
-    : array{array}, index{index}
+    : array{array}
+    , index{index}
 {
 }
 

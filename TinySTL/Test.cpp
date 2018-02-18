@@ -3,7 +3,7 @@
 #include "BinaryMaxHeap.hpp"
 #include "BinarySearchTree.hpp"
 #include "Dictionary.hpp"
-#include "Exception.h"
+#include "Exception.hpp"
 #include "Functional.hpp"
 #include "List.hpp"
 #include "Queue.hpp"

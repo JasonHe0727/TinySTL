@@ -1,7 +1,7 @@
 #ifndef LIST_H
 #define LIST_H
+#include "Exception.hpp"
 #include <initializer_list>
-
 template <typename T>
 class List;
 
@@ -54,7 +54,10 @@ private:
 };
 
 template <typename T>
-List<T>::List() : capacity{0}, count{0}, items{nullptr}
+List<T>::List()
+    : capacity{0}
+    , count{0}
+    , items{nullptr}
 {
 }
 
@@ -69,14 +72,17 @@ List<T>::~List()
 
 template <typename T>
 List<T>::List(int capacity)
-    : capacity{capacity}, count{0}, items{new T[capacity]}
+    : capacity{capacity}
+    , count{0}
+    , items{new T[capacity]}
 {
 }
 
 template <typename T>
 List<T>::List(std::initializer_list<T> args)
-    : capacity{static_cast<int>(args.size())}, count{capacity},
-      items{new T[capacity]}
+    : capacity{static_cast<int>(args.size())}
+    , count{capacity}
+    , items{new T[capacity]}
 {
     int i = 0;
     for (T item : args)
@@ -88,7 +94,9 @@ List<T>::List(std::initializer_list<T> args)
 
 template <typename T>
 List<T>::List(const List<T>& other)
-    : capacity{other.capacity}, count{other.count}, items{new T[other.capacity]}
+    : capacity{other.capacity}
+    , count{other.count}
+    , items{new T[other.capacity]}
 {
     for (int i = 0; i < capacity; i++)
     {
@@ -111,7 +119,9 @@ List<T>& List<T>::operator=(const List<T>& other)
 
 template <typename T>
 List<T>::List(List<T>&& other)
-    : capacity{other.capacity}, count{other.count}, items{other.items}
+    : capacity{other.capacity}
+    , count{other.count}
+    , items{other.items}
 {
     other.items = nullptr;
 }
@@ -174,7 +184,7 @@ T& List<T>::At(int index) const
     }
     else
     {
-        throw "index out of range";
+        throw IndexOutOfRangeException();
     }
 }
 
@@ -220,7 +230,8 @@ void List<T>::Expand()
 
 template <typename T>
 ListIterator<T>::ListIterator(List<T>& list, int index)
-    : list{list}, index{index}
+    : list{list}
+    , index{index}
 {
 }
 

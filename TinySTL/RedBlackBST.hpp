@@ -1,5 +1,6 @@
 #ifndef REDBLACKBST_HPP
 #define REDBLACKBST_HPP
+#include "Exception.hpp"
 template <typename TKey, typename TValue>
 class RedBlackBST;
 template <typename TKey, typename TValue>
@@ -25,7 +26,7 @@ class RBNode
 public:
     RBNode(TKey key, TValue value, RBNode<TKey, TValue>* left,
            RBNode<TKey, TValue>* right, NodeColor color);
-    friend class RBTree<TKey, TValue>;
+    friend class RedBlackBST<TKey, TValue>;
 
 private:
     TKey key;
@@ -37,7 +38,11 @@ private:
 template <typename TKey, typename TValue>
 RBNode<TKey, TValue>::RBNode(TKey key, TValue value, RBNode<TKey, TValue>* left,
                              RBNode<TKey, TValue>* right, NodeColor color)
-    : key{key}, value{value}, left{left}, right{right}, color{color}
+    : key{key}
+    , value{value}
+    , left{left}
+    , right{right}
+    , color{color}
 {
 }
 
@@ -96,7 +101,7 @@ void RedBlackBST<TKey, TValue>::Insert(RBNode<TKey, TValue>* y, TKey key,
     }
     else
     {
-        throw "duplicative key";
+        throw ArgumentException(L"duplicative key");
     }
 
     if (IsRed(y->right) && !IsRed(y->left))
@@ -119,7 +124,7 @@ bool RedBlackBST<TKey, TValue>::IsRed(RBNode<TKey, TValue>* node)
 {
     if (node == nullptr)
     {
-        return false; // null links are block
+        return false; // null links are black
     }
     else
     {
