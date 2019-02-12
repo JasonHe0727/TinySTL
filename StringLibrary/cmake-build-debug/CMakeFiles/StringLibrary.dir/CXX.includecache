@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/heyanjie/Documents/MyCode/Cpp/Clion/StringLibrary/String.hpp
+stdio.h
+-
+stdlib.h
+-
+inttypes.h
+-
+vector
+-
+iostream
+-
+bits/functexcept.h
+-
+
+/home/heyanjie/Documents/MyCode/Cpp/Clion/StringLibrary/main.cpp
+iostream
+-
+String.hpp
+/home/heyanjie/Documents/MyCode/Cpp/Clion/StringLibrary/String.hpp
+vector
+-
+
