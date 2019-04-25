@@ -3,4 +3,4 @@ project(TinySTL)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(TinySTL main.cpp)
+add_executable(TinySTL main.cpp List.hpp)
