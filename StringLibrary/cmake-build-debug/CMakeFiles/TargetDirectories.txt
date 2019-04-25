@@ -1,3 +1,0 @@
-/home/heyanjie/Documents/MyCode/Cpp/Clion/StringLibrary/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/heyanjie/Documents/MyCode/Cpp/Clion/StringLibrary/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/heyanjie/Documents/MyCode/Cpp/Clion/StringLibrary/cmake-build-debug/CMakeFiles/StringLibrary.dir

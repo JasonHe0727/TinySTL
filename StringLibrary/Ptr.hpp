@@ -1,9 +1,0 @@
-#ifndef STRINGLIBRARY_PTR_HPP
-#define STRINGLIBRARY_PTR_HPP
-
-class Ptr {
-
-};
-
-
-#endif //STRINGLIBRARY_PTR_HPP
