@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/HeYan/Documents/GitHub/TinySTL/String.cpp" "C:/Users/HeYan/Documents/GitHub/TinySTL/cmake-build-debug/CMakeFiles/TinySTL.dir/String.cpp.obj"
   "C:/Users/HeYan/Documents/GitHub/TinySTL/main.cpp" "C:/Users/HeYan/Documents/GitHub/TinySTL/cmake-build-debug/CMakeFiles/TinySTL.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")

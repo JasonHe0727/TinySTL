@@ -124,6 +124,33 @@ TinySTL\fast:
 	$(MAKE) -f CMakeFiles\TinySTL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\build
 .PHONY : TinySTL\fast
 
+String.obj: String.cpp.obj
+
+.PHONY : String.obj
+
+# target to build an object file
+String.cpp.obj:
+	$(MAKE) -f CMakeFiles\TinySTL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\String.cpp.obj
+.PHONY : String.cpp.obj
+
+String.i: String.cpp.i
+
+.PHONY : String.i
+
+# target to preprocess a source file
+String.cpp.i:
+	$(MAKE) -f CMakeFiles\TinySTL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\String.cpp.i
+.PHONY : String.cpp.i
+
+String.s: String.cpp.s
+
+.PHONY : String.s
+
+# target to generate assembly for a file
+String.cpp.s:
+	$(MAKE) -f CMakeFiles\TinySTL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\String.cpp.s
+.PHONY : String.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -160,6 +187,9 @@ help:
 	@echo ... edit_cache
 	@echo ... TinySTL
 	@echo ... rebuild_cache
+	@echo ... String.obj
+	@echo ... String.i
+	@echo ... String.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

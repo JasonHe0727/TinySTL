@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/HeYan/Documents/GitHub/TinySTL/String.cpp
+String.hpp
+C:/Users/HeYan/Documents/GitHub/TinySTL/String.hpp
+
+C:/Users/HeYan/Documents/GitHub/TinySTL/String.hpp
+cstdint
+-
+
+C:/Users/HeYan/Documents/GitHub/TinySTL/main.cpp
+iostream
+-
+

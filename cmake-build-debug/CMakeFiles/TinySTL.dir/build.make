@@ -77,17 +77,38 @@ CMakeFiles\TinySTL.dir\main.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\TinySTL.dir\main.cpp.s /c C:\Users\HeYan\Documents\GitHub\TinySTL\main.cpp
 <<
 
+CMakeFiles\TinySTL.dir\String.cpp.obj: CMakeFiles\TinySTL.dir\flags.make
+CMakeFiles\TinySTL.dir\String.cpp.obj: ..\String.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HeYan\Documents\GitHub\TinySTL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TinySTL.dir/String.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\TinySTL.dir\String.cpp.obj /FdCMakeFiles\TinySTL.dir\ /FS -c C:\Users\HeYan\Documents\GitHub\TinySTL\String.cpp
+<<
+
+CMakeFiles\TinySTL.dir\String.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TinySTL.dir/String.cpp.i"
+	C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\TinySTL.dir\String.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HeYan\Documents\GitHub\TinySTL\String.cpp
+<<
+
+CMakeFiles\TinySTL.dir\String.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinySTL.dir/String.cpp.s"
+	C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\TinySTL.dir\String.cpp.s /c C:\Users\HeYan\Documents\GitHub\TinySTL\String.cpp
+<<
+
 # Object files for target TinySTL
 TinySTL_OBJECTS = \
-"CMakeFiles\TinySTL.dir\main.cpp.obj"
+"CMakeFiles\TinySTL.dir\main.cpp.obj" \
+"CMakeFiles\TinySTL.dir\String.cpp.obj"
 
 # External object files for target TinySTL
 TinySTL_EXTERNAL_OBJECTS =
 
 TinySTL.exe: CMakeFiles\TinySTL.dir\main.cpp.obj
+TinySTL.exe: CMakeFiles\TinySTL.dir\String.cpp.obj
 TinySTL.exe: CMakeFiles\TinySTL.dir\build.make
 TinySTL.exe: CMakeFiles\TinySTL.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\HeYan\Documents\GitHub\TinySTL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TinySTL.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\HeYan\Documents\GitHub\TinySTL\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TinySTL.exe"
 	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\TinySTL.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\TinySTL.dir\objects1.rsp @<<
  /out:TinySTL.exe /implib:TinySTL.lib /pdb:C:\Users\HeYan\Documents\GitHub\TinySTL\cmake-build-debug\TinySTL.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
