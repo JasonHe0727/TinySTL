@@ -211,3 +211,69 @@ void Encoding::Utf8ToUtf16(const char *utf8, uint16_t *result)
         }
     }
 }
+
+uint8_t *Encoding::Utf16CharacterToUtf8(uint16_t code)
+{
+    uint8_t result[7];
+    result[6] = '\0';
+    if (code > 0x0000 && code <= 0x007F)
+    {
+        result[0] = code;
+    }
+    else if (code >= 0x0080 && code <= 0x07FF)
+    {
+        uint8_t byte1 = 0xC0 | ((code >> 6) & 0x1F);
+        uint8_t byte2 = 0x80 | (code & 0x3F);
+        result[0] = byte1;
+        result[1] = byte2;
+    }
+    else if (code >= 0x0800 && code <= 0xFFFF)
+    {
+        uint8_t byte1 = 0xE0 | ((code >> 12) & 0x0F);
+        uint8_t byte2 = 0x80 | ((code >> 6) & 0x3F);
+        uint8_t byte3 = 0x80 | (code & 0x3F);
+        result[0] = byte1;
+        result[1] = byte2;
+        result[2] = byte3;
+    }
+    else if (code >= 0x00010000 && code <= 0x001FFFFF)
+    {
+        uint8_t byte1 = 0xF0 | ((code >> 18) & 0x07);
+        uint8_t byte2 = 0x80 | ((code >> 12) & 0x3F);
+        uint8_t byte3 = 0x80 | ((code >> 6) & 0x3F);
+        uint8_t byte4 = 0x80 | (code & 0x3F);
+        result[0] = byte1;
+        result[1] = byte2;
+        result[2] = byte3;
+        result[3] = byte4;
+    }
+    else if (code >= 0x00200000 && code <= 0x03FFFFFF)
+    {
+        uint8_t byte1 = 0xF8 | ((code >> 24) & 0x03);
+        uint8_t byte2 = 0x80 | ((code >> 18) & 0x3F);
+        uint8_t byte3 = 0x80 | ((code >> 12) & 0x3F);
+        uint8_t byte4 = 0x80 | ((code >> 6) & 0x3F);
+        uint8_t byte5 = 0x80 | (code & 0x3F);
+        result[0] = byte1;
+        result[1] = byte2;
+        result[2] = byte3;
+        result[3] = byte4;
+        result[4] = byte5;
+    }
+    else if (code >= 0x04000000 && code <= 0x7FFFFFFF)
+    {
+        uint8_t byte1 = 0xFC | ((code >> 30) & 0x01);
+        uint8_t byte2 = 0x80 | ((code >> 24) & 0x3F);
+        uint8_t byte3 = 0x80 | ((code >> 18) & 0x3F);
+        uint8_t byte4 = 0x80 | ((code >> 12) & 0x3F);
+        uint8_t byte5 = 0x80 | ((code >> 6) & 0x3F);
+        uint8_t byte6 = 0x80 | (code & 0x3F);
+        result[0] = byte1;
+        result[1] = byte2;
+        result[2] = byte3;
+        result[3] = byte4;
+        result[4] = byte5;
+        result[5] = byte6;
+    }
+    return result;
+}

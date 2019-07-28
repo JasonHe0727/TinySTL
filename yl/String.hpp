@@ -4,6 +4,7 @@
 
 #include <cstdint>
 #include <exception>
+#include <iostream>
 
 class Encoding
 {
@@ -11,6 +12,8 @@ public:
     static int Utf8ToUtf16Count(const char *utf8);
 
     static void Utf8ToUtf16(const char *utf8, uint16_t *result);
+
+    static uint8_t *Encoding::Utf16CharacterToUtf8(uint16_t code);
 };
 
 class String
@@ -53,11 +56,6 @@ public:
         return *this;
     }
 
-    const uint16_t &operator[](int index) const
-    {
-        return characters[index];
-    }
-
     ~String()
     {
         (*refCount)--;
@@ -67,6 +65,17 @@ public:
             delete refCount;
         }
     }
+
+    const uint16_t &operator[](int index) const
+    {
+        return characters[index];
+    }
+
+    int size()
+    {
+        return length;
+    }
+
 private:
     void Copy(const String &other)
     {
