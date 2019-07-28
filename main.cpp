@@ -1,7 +1,11 @@
 #include <iostream>
+#include "yl/String.hpp"
+#include <vector>
+
 
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    String text = "hello, world!";
+
     return 0;
 }

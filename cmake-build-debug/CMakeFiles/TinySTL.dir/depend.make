@@ -5,4 +5,8 @@ CMakeFiles\TinySTL.dir\String.cpp.obj: ..\String.cpp
 CMakeFiles\TinySTL.dir\String.cpp.obj: ..\String.hpp
 
 CMakeFiles\TinySTL.dir\main.cpp.obj: ..\main.cpp
+CMakeFiles\TinySTL.dir\main.cpp.obj: ..\yl\string.hpp
+
+CMakeFiles\TinySTL.dir\yl\string.cpp.obj: ..\yl\string.cpp
+CMakeFiles\TinySTL.dir\yl\string.cpp.obj: ..\yl\string.hpp
 

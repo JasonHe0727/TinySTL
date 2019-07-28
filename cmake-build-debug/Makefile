@@ -178,6 +178,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\TinySTL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\main.cpp.s
 .PHONY : main.cpp.s
 
+yl\String.obj: yl\String.cpp.obj
+
+.PHONY : yl\String.obj
+
+# target to build an object file
+yl\String.cpp.obj:
+	$(MAKE) -f CMakeFiles\TinySTL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\yl\String.cpp.obj
+.PHONY : yl\String.cpp.obj
+
+yl\String.i: yl\String.cpp.i
+
+.PHONY : yl\String.i
+
+# target to preprocess a source file
+yl\String.cpp.i:
+	$(MAKE) -f CMakeFiles\TinySTL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\yl\String.cpp.i
+.PHONY : yl\String.cpp.i
+
+yl\String.s: yl\String.cpp.s
+
+.PHONY : yl\String.s
+
+# target to generate assembly for a file
+yl\String.cpp.s:
+	$(MAKE) -f CMakeFiles\TinySTL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\yl\String.cpp.s
+.PHONY : yl\String.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -193,6 +220,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... yl/String.obj
+	@echo ... yl/String.i
+	@echo ... yl/String.s
 .PHONY : help
 
 
