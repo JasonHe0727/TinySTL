@@ -98,10 +98,10 @@ int Encoding::Utf8ToUtf16Count(const char *utf8)
         }
         else
         {
-//            throw std::exception("illegal utf-8 characters input");
             return -1;
         }
     }
+    return count;
 }
 
 void Encoding::Utf8ToUtf16(const char *utf8, uint16_t *result)
@@ -214,8 +214,11 @@ void Encoding::Utf8ToUtf16(const char *utf8, uint16_t *result)
 
 uint8_t *Encoding::Utf16CharacterToUtf8(uint16_t code)
 {
-    uint8_t result[7];
-    result[6] = '\0';
+    static uint8_t result[7];
+    for (int i = 0; i < 7; i++)
+    {
+        result[i] = '\0';
+    }
     if (code > 0x0000 && code <= 0x007F)
     {
         result[0] = code;
@@ -276,4 +279,77 @@ uint8_t *Encoding::Utf16CharacterToUtf8(uint16_t code)
         result[5] = byte6;
     }
     return result;
+}
+
+String::String()
+        : length{0}, characters{nullptr}, refCount{new int(1)}, cachedHashCode{0}
+{
+
+}
+
+String::String(const char *utf8Str)
+{
+    int count = Encoding::Utf8ToUtf16Count(utf8Str);
+    if (count == -1)
+    {
+        throw std::exception("illegal utf-8 characters input");
+    }
+    else
+    {
+        length = count;
+        characters = new uint16_t[length];
+        Encoding::Utf8ToUtf16(utf8Str, characters);
+        refCount = new int(1);
+        cachedHashCode = 0;
+    }
+}
+
+String::String(const String &other)
+{
+    Copy(other);
+}
+
+String &String::operator=(const String &other) noexcept
+{
+    Copy(other);
+    return *this;
+}
+
+String::~String()
+{
+    (*refCount)--;
+    if ((*refCount) == 0)
+    {
+        delete[] characters;
+        delete refCount;
+    }
+}
+
+void String::Copy(const String &other)
+{
+    if (this != (&other))
+    {
+        length = other.length;
+        characters = new uint16_t[length];
+        refCount = other.refCount;
+        cachedHashCode = other.cachedHashCode;
+        (*refCount)++;
+    }
+}
+
+int String::GetHashCode() const
+{
+    if (cachedHashCode != 0)
+    {
+        return cachedHashCode;
+    }
+    else
+    {
+        int hashCode = 0;
+        for (int i = 0; i < length; i++)
+        {
+            hashCode = hashCode * 31 + characters[i];
+        }
+        return cachedHashCode = hashCode;
+    }
 }

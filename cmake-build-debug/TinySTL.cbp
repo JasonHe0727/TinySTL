@@ -96,10 +96,28 @@
 		<Unit filename="C:/Users/HeYan/Documents/GitHub/TinySTL/main.cpp">
 			<Option target="TinySTL"/>
 		</Unit>
+		<Unit filename="C:/Users/HeYan/Documents/GitHub/TinySTL/yl/Array.cpp">
+			<Option target="TinySTL"/>
+		</Unit>
+		<Unit filename="C:/Users/HeYan/Documents/GitHub/TinySTL/yl/Array.hpp">
+			<Option target="TinySTL"/>
+		</Unit>
+		<Unit filename="C:/Users/HeYan/Documents/GitHub/TinySTL/yl/Console.cpp">
+			<Option target="TinySTL"/>
+		</Unit>
+		<Unit filename="C:/Users/HeYan/Documents/GitHub/TinySTL/yl/Console.hpp">
+			<Option target="TinySTL"/>
+		</Unit>
 		<Unit filename="C:/Users/HeYan/Documents/GitHub/TinySTL/yl/String.cpp">
 			<Option target="TinySTL"/>
 		</Unit>
 		<Unit filename="C:/Users/HeYan/Documents/GitHub/TinySTL/yl/String.hpp">
+			<Option target="TinySTL"/>
+		</Unit>
+		<Unit filename="C:/Users/HeYan/Documents/GitHub/TinySTL/yl/StringBuilder.cpp">
+			<Option target="TinySTL"/>
+		</Unit>
+		<Unit filename="C:/Users/HeYan/Documents/GitHub/TinySTL/yl/StringBuilder.hpp">
 			<Option target="TinySTL"/>
 		</Unit>
 		<Unit filename="C:/Users/HeYan/Documents/GitHub/TinySTL/CMakeLists.txt">

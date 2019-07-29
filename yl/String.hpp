@@ -4,7 +4,6 @@
 
 #include <cstdint>
 #include <exception>
-#include <iostream>
 
 class Encoding
 {
@@ -13,7 +12,7 @@ public:
 
     static void Utf8ToUtf16(const char *utf8, uint16_t *result);
 
-    static uint8_t *Encoding::Utf16CharacterToUtf8(uint16_t code);
+    static uint8_t *Utf16CharacterToUtf8(uint16_t code);
 };
 
 class String
@@ -22,72 +21,39 @@ private:
     int length;
     uint16_t *characters;
     int *refCount;
+    mutable int cachedHashCode;
 public:
-    String()
-            : length{0}, characters{nullptr}, refCount{new int(1)}
-    {
+    String();
 
-    }
+    String(const char *utf8Str);
 
-    String(const char *utf8Str)
-    {
-        int count = Encoding::Utf8ToUtf16Count(utf8Str);
-        if (count == -1)
-        {
-            throw std::exception("illegal utf-8 characters input");
-        }
-        else
-        {
-            length = count;
-            characters = new uint16_t[length];
-            Encoding::Utf8ToUtf16(utf8Str, characters);
-            refCount = new int(1);
-        }
-    }
+    String(const String &other);
 
-    String(const String &other)
-    {
-        Copy(other);
-    }
+    String &operator=(const String &other) noexcept;
 
-    String &operator=(const String &other) noexcept
-    {
-        Copy(other);
-        return *this;
-    }
+    ~String();
 
-    ~String()
-    {
-        (*refCount)--;
-        if ((*refCount) == 0)
-        {
-            delete[] characters;
-            delete refCount;
-        }
-    }
+    const uint16_t &operator[](int index) const;
 
-    const uint16_t &operator[](int index) const
-    {
-        return characters[index];
-    }
+    int Length() const;
 
-    int size()
-    {
-        return length;
-    }
+    int GetHashCode() const;
 
+    static String Empty;
 private:
-    void Copy(const String &other)
-    {
-        if (this != (&other))
-        {
-            length = other.length;
-            characters = new uint16_t[length];
-            refCount = other.refCount;
-            (*refCount)++;
-        }
-    }
+    void Copy(const String &other);
 };
 
 
+inline const uint16_t &String::operator[](int index) const
+{
+    return characters[index];
+}
+
+inline int String::Length() const
+{
+    return length;
+}
+
+String String::Empty = String();
 #endif //STRING_HPP

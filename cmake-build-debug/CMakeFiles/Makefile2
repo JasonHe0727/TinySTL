@@ -72,7 +72,7 @@ CMAKE_BINARY_DIR = C:\Users\HeYan\Documents\GitHub\TinySTL\cmake-build-debug
 CMakeFiles\TinySTL.dir\all:
 	$(MAKE) -f CMakeFiles\TinySTL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\depend
 	$(MAKE) -f CMakeFiles\TinySTL.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\HeYan\Documents\GitHub\TinySTL\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target TinySTL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\HeYan\Documents\GitHub\TinySTL\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target TinySTL"
 .PHONY : CMakeFiles\TinySTL.dir\all
 
 # Include target in all.
@@ -82,7 +82,7 @@ all: CMakeFiles\TinySTL.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\TinySTL.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HeYan\Documents\GitHub\TinySTL\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HeYan\Documents\GitHub\TinySTL\cmake-build-debug\CMakeFiles 7
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\TinySTL.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HeYan\Documents\GitHub\TinySTL\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\TinySTL.dir\rule
