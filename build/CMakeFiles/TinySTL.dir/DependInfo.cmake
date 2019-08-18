@@ -4,11 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/HeYan/Documents/GitHub/TinySTL/main.cpp" "C:/Users/HeYan/Documents/GitHub/TinySTL/build/CMakeFiles/TinySTL.dir/main.cpp.obj"
-  "C:/Users/HeYan/Documents/GitHub/TinySTL/src/sources/Array.cpp" "C:/Users/HeYan/Documents/GitHub/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/Array.cpp.obj"
-  "C:/Users/HeYan/Documents/GitHub/TinySTL/src/sources/Console.cpp" "C:/Users/HeYan/Documents/GitHub/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/Console.cpp.obj"
-  "C:/Users/HeYan/Documents/GitHub/TinySTL/src/sources/String.cpp" "C:/Users/HeYan/Documents/GitHub/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/String.cpp.obj"
-  "C:/Users/HeYan/Documents/GitHub/TinySTL/src/sources/StringBuilder.cpp" "C:/Users/HeYan/Documents/GitHub/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.obj"
+  "/home/heyanjie/Documents/MyCode/C++/TinySTL/main.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/main.cpp.o"
+  "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Array.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o"
+  "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o"
+  "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o"
+  "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/String.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/String.cpp.o"
+  "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringBuilder.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

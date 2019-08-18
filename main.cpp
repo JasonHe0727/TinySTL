@@ -8,7 +8,7 @@ using std::endl;
 
 int main()
 {
-    String text = "Hello, C++!";
+    String text = "你好, C++!";
     cout << "string length: " << text.Length() << endl;
     Console::WriteLine(text);
     return 0;

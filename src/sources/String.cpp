@@ -1,4 +1,5 @@
 #include "String.hpp"
+#include "Exception.hpp"
 
 int Encoding::Utf8ToUtf16Count(const char *utf8)
 {
@@ -207,7 +208,7 @@ void Encoding::Utf8ToUtf16(const char *utf8, uint16_t *result)
         }
         else
         {
-            throw std::exception("illegal utf-8 characters input");
+            throw Exception("illegal utf-8 characters input");
         }
     }
 }
@@ -292,7 +293,7 @@ String::String(const char *utf8Str)
     int count = Encoding::Utf8ToUtf16Count(utf8Str);
     if (count == -1)
     {
-        throw std::exception("illegal utf-8 characters input");
+        throw Exception("illegal utf-8 characters input");
     }
     else
     {
@@ -353,3 +354,5 @@ int String::GetHashCode() const
         return cachedHashCode = hashCode;
     }
 }
+
+String String::Empty = String();

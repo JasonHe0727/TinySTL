@@ -1,9 +1,7 @@
 #ifndef STRING_HPP
 #define STRING_HPP
 
-
 #include <cstdint>
-#include <exception>
 
 class Encoding
 {
@@ -55,5 +53,4 @@ inline int String::Length() const
     return length;
 }
 
-String String::Empty = String();
 #endif //STRING_HPP
