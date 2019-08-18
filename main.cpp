@@ -1,6 +1,6 @@
 #include <iostream>
-#include "yl/String.hpp"
-#include "yl/Console.hpp"
+#include "String.hpp"
+#include "Console.hpp"
 #include <vector>
 
 using std::cout;
