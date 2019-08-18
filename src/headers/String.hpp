@@ -29,6 +29,10 @@ public:
 
     String &operator=(const String &other) noexcept;
 
+	String(String&& other) = delete;
+
+	String& operator=(String&& other) = delete;
+
     ~String();
 
     const uint16_t &operator[](int index) const;

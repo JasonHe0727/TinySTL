@@ -36,6 +36,14 @@ void Console::WriteLine(const uint16_t &character)
     std::cout << std::endl;
 }
 
+void Console::WriteInt(const int& i) {
+	std::cout << i;
+}
+
+void Console::WriteIntLine(const int& i) {
+	std::cout << i << std::endl;
+}
+
 void Console::WriteLine()
 {
     std::cout << std::endl;

@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../src/headers/Array.hpp
-
 ../src/headers/Console.hpp
 String.hpp
 ../src/headers/String.hpp
@@ -17,6 +15,14 @@ exception
 -
 String.hpp
 ../src/headers/String.hpp
+
+../src/headers/List.hpp
+memory
+-
+limits
+-
+initializer_list
+-
 
 ../src/headers/String.hpp
 cstdint
@@ -31,12 +37,8 @@ String.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/String.hpp
 Console.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Console.hpp
-vector
--
-
-/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Array.cpp
-Array.hpp
-/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Array.hpp
+List.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/List.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 Console.hpp

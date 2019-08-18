@@ -14,6 +14,10 @@ public:
 
     static void WriteLine(const uint16_t& character);
 
+	static void WriteInt(const int& i);
+
+	static void WriteIntLine(const int& i);
+
     static void WriteLine();
 };
 

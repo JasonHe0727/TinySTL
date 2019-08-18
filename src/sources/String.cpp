@@ -331,7 +331,7 @@ void String::Copy(const String &other)
     if (this != (&other))
     {
         length = other.length;
-        characters = new uint16_t[length];
+		characters = other.characters;
         refCount = other.refCount;
         cachedHashCode = other.cachedHashCode;
         (*refCount)++;
@@ -355,4 +355,4 @@ int String::GetHashCode() const
     }
 }
 
-String String::Empty = String();
+String String::Empty{};

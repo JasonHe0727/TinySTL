@@ -3,11 +3,9 @@
 
 CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/Console.hpp
+ ../src/headers/List.hpp
  ../src/headers/String.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/main.cpp
-CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o
- ../src/headers/Array.hpp
- /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Array.cpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o
  ../src/headers/Console.hpp
  ../src/headers/String.hpp

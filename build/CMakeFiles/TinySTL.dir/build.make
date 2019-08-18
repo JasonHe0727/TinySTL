@@ -81,33 +81,9 @@ CMakeFiles/TinySTL.dir/main.cpp.o.provides: CMakeFiles/TinySTL.dir/main.cpp.o.re
 CMakeFiles/TinySTL.dir/main.cpp.o.provides.build: CMakeFiles/TinySTL.dir/main.cpp.o
 
 
-CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o: CMakeFiles/TinySTL.dir/flags.make
-CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o: ../src/sources/Array.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o -c /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Array.cpp
-
-CMakeFiles/TinySTL.dir/src/sources/Array.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TinySTL.dir/src/sources/Array.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Array.cpp > CMakeFiles/TinySTL.dir/src/sources/Array.cpp.i
-
-CMakeFiles/TinySTL.dir/src/sources/Array.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinySTL.dir/src/sources/Array.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Array.cpp -o CMakeFiles/TinySTL.dir/src/sources/Array.cpp.s
-
-CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o.requires:
-
-.PHONY : CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o.requires
-
-CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o.provides: CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o.requires
-	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o.provides.build
-.PHONY : CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o.provides
-
-CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o.provides.build: CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o
-
-
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: CMakeFiles/TinySTL.dir/flags.make
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/sources/Console.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o -c /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.i: cmake_force
@@ -131,7 +107,7 @@ CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o.provides.build: CMakeFiles/Tiny
 
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o: CMakeFiles/TinySTL.dir/flags.make
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o: ../src/sources/Exception.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o -c /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.cpp
 
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.i: cmake_force
@@ -155,7 +131,7 @@ CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o.provides.build: CMakeFiles/Ti
 
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: CMakeFiles/TinySTL.dir/flags.make
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/sources/String.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TinySTL.dir/src/sources/String.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TinySTL.dir/src/sources/String.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinySTL.dir/src/sources/String.cpp.o -c /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/String.cpp
 
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.i: cmake_force
@@ -179,7 +155,7 @@ CMakeFiles/TinySTL.dir/src/sources/String.cpp.o.provides.build: CMakeFiles/TinyS
 
 CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o: CMakeFiles/TinySTL.dir/flags.make
 CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o: ../src/sources/StringBuilder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o -c /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringBuilder.cpp
 
 CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.i: cmake_force
@@ -204,7 +180,6 @@ CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o.provides.build: CMakeFile
 # Object files for target TinySTL
 TinySTL_OBJECTS = \
 "CMakeFiles/TinySTL.dir/main.cpp.o" \
-"CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o" \
 "CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o" \
 "CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o" \
 "CMakeFiles/TinySTL.dir/src/sources/String.cpp.o" \
@@ -214,14 +189,13 @@ TinySTL_OBJECTS = \
 TinySTL_EXTERNAL_OBJECTS =
 
 TinySTL: CMakeFiles/TinySTL.dir/main.cpp.o
-TinySTL: CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/src/sources/String.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/build.make
 TinySTL: CMakeFiles/TinySTL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable TinySTL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable TinySTL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TinySTL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -230,7 +204,6 @@ CMakeFiles/TinySTL.dir/build: TinySTL
 .PHONY : CMakeFiles/TinySTL.dir/build
 
 CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/main.cpp.o.requires
-CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o.requires
 CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o.requires
 CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o.requires
 CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/src/sources/String.cpp.o.requires

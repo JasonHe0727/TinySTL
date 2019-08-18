@@ -3,6 +3,6 @@
 Exception::Exception() {
 }
 
-Exception::Exception(String message)
+Exception::Exception(const String& message)
 	:message{message} {
 }

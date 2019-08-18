@@ -9,7 +9,7 @@ public:
 	String message;
 
 	Exception();
-	Exception(String message);
+	Exception(const String& message);
 };
 
 #endif // EXCEPTION_HPP

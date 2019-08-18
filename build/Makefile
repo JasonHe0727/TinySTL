@@ -150,33 +150,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/sources/Array.o: src/sources/Array.cpp.o
-
-.PHONY : src/sources/Array.o
-
-# target to build an object file
-src/sources/Array.cpp.o:
-	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Array.cpp.o
-.PHONY : src/sources/Array.cpp.o
-
-src/sources/Array.i: src/sources/Array.cpp.i
-
-.PHONY : src/sources/Array.i
-
-# target to preprocess a source file
-src/sources/Array.cpp.i:
-	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Array.cpp.i
-.PHONY : src/sources/Array.cpp.i
-
-src/sources/Array.s: src/sources/Array.cpp.s
-
-.PHONY : src/sources/Array.s
-
-# target to generate assembly for a file
-src/sources/Array.cpp.s:
-	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Array.cpp.s
-.PHONY : src/sources/Array.cpp.s
-
 src/sources/Console.o: src/sources/Console.cpp.o
 
 .PHONY : src/sources/Console.o
@@ -297,9 +270,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/sources/Array.o"
-	@echo "... src/sources/Array.i"
-	@echo "... src/sources/Array.s"
 	@echo "... src/sources/Console.o"
 	@echo "... src/sources/Console.i"
 	@echo "... src/sources/Console.s"
