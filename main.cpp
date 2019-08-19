@@ -12,6 +12,9 @@ int main()
     cout << "string length: " << text.Length() << endl;
     Console::WriteLine(text);
 
+	String slice = text.Slice(0, 2);
+	Console::WriteLine(slice);
+
 	List<int> list;
 	for(int i = 0; i < 10; i++) {
 		list.Add(i * i);
@@ -27,5 +30,11 @@ int main()
 		Console::Write(" ");
 	}
 	Console::WriteLine();
+
+	String s = "To be or not to be, it is a question.";
+	auto array = s.Split(" ");
+	for(int i = 0; i < array.Length(); i++) {
+		Console::WriteLine(array[i]);
+	}
     return 0;
 }

@@ -1,5 +1,6 @@
 #include "String.hpp"
 #include "Exception.hpp"
+#include "Console.hpp"
 
 int Encoding::Utf8ToUtf16Count(const char *utf8)
 {
@@ -316,6 +317,16 @@ String &String::operator=(const String &other) noexcept
     return *this;
 }
 
+String::String(String&& other) {
+	Copy(other);
+}
+
+String& String::operator=(String&& other) noexcept
+{
+	Copy(other);
+	return *this;
+}
+
 String::~String()
 {
     (*refCount)--;
@@ -353,6 +364,64 @@ int String::GetHashCode() const
         }
         return cachedHashCode = hashCode;
     }
+}
+
+String String::Slice(int startIndex, int endIndex) {
+	String result;
+	result.length = endIndex - startIndex;
+	result.characters = new uint16_t[result.length];
+	for(int i = startIndex; i < endIndex; i++) {
+		result.characters[i - startIndex] = operator[](i);
+	}
+	return result;
+}
+
+int String::IndexOf(const String& value) {
+	return IndexOf(value, 0);
+}
+
+int String::IndexOf(const String& value, int startIndex) {
+	for(int i = startIndex; i < Length(); i++) {
+		bool success = true;
+		for(int j = 0; j < value.Length(); j++) {
+			if(operator[](i + j) != value[j]) {
+				success = false;
+				break;
+			}
+		}
+		if(success) {
+			return i;
+		}
+	}
+	return (-1);
+}
+
+Array<String> String::Split(const String& separator) {
+	Array<int> sepList(length);
+	Array<int> lengthList(length);
+	int count = 0;
+	int pos = 0;
+	while (pos < Length()) {
+		int index = IndexOf(separator, pos);
+		if(index != -1) {
+			sepList[count] = pos;
+			lengthList[count] = index - pos;
+			count++;
+			pos = index + separator.Length();
+		} else {
+			break;
+		}
+	}
+	if(pos < Length()) {
+		sepList[count] = pos;
+		lengthList[count] = Length() - pos;
+		count++;
+	}
+	Array<String> items(count);
+	for(int i = 0; i < count; i++) {
+		items[i] = Slice(sepList[i], sepList[i] + lengthList[i]);
+	}
+	return items;
 }
 
 String String::Empty{};

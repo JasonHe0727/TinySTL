@@ -2,6 +2,7 @@
 #define STRING_HPP
 
 #include <cstdint>
+#include "Array.hpp"
 
 class Encoding
 {
@@ -29,9 +30,9 @@ public:
 
     String &operator=(const String &other) noexcept;
 
-	String(String&& other) = delete;
+	String(String&& other);
 
-	String& operator=(String&& other) = delete;
+	String& operator=(String&& other) noexcept;
 
     ~String();
 
@@ -40,6 +41,14 @@ public:
     int Length() const;
 
     int GetHashCode() const;
+
+	String Slice(int startIndex, int endIndex);
+
+	int IndexOf(const String& value);
+
+	int IndexOf(const String& value, int startIndex);
+
+	Array<String> Split(const String& separator);
 
     static String Empty;
 private:

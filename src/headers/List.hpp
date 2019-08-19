@@ -16,6 +16,9 @@ public:
 	List(): count{0}, realLength{0}, items{nullptr} {
 	}
 
+	List(int capacity): count{0}, realLength{capacity}, items(allocator.allocate(count)) {
+	}
+
 	List(std::initializer_list<T> list) {
 		count = static_cast<int>(list.size());
 		realLength = count;

@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../src/headers/Array.hpp
+memory
+-
+
 ../src/headers/Console.hpp
 String.hpp
 ../src/headers/String.hpp
@@ -27,6 +31,8 @@ initializer_list
 ../src/headers/String.hpp
 cstdint
 -
+Array.hpp
+../src/headers/Array.hpp
 
 ../src/headers/StringBuilder.hpp
 
@@ -55,6 +61,8 @@ String.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/String.hpp
 Exception.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.hpp
+Console.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringBuilder.cpp
 StringBuilder.hpp
