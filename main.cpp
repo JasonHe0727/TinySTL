@@ -36,5 +36,9 @@ int main()
 	for(int i = 0; i < array.Length(); i++) {
 		Console::WriteLine(array[i]);
 	}
+
+	Array<String> words = {"GET", "OUT", "OF", "HERE"};
+	String sentence = String::Join("!!", words);
+	Console::WriteLine(sentence);
     return 0;
 }

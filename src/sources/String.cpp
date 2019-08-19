@@ -424,4 +424,31 @@ Array<String> String::Split(const String& separator) {
 	return items;
 }
 
+String String::Join(const String& separator, const Array<String>& values) {
+	int count = 0;
+	for(int i = 0; i < values.Length(); i++) {
+		count = count + values[i].Length();
+	}
+	count = count + (values.Length() - 1) * separator.Length();
+
+	String result;
+	result.length = count;
+	result.characters = new uint16_t[count];
+	int index = 0;
+	for(int i = 0; i < values.Length(); i++) {
+		if(i != 0) {
+			for(int k = 0; k < separator.Length(); k++) {
+				result.characters[index] = separator[k];
+				index++;
+			}
+		}
+		const String& value = values[i];
+		for(int j = 0; j < value.Length(); j++) {
+			result.characters[index] = value[j];
+			index++;
+		}
+	}
+	return result;
+}
+
 String String::Empty{};

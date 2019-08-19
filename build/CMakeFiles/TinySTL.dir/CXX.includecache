@@ -9,6 +9,8 @@
 ../src/headers/Array.hpp
 memory
 -
+initializer_list
+-
 
 ../src/headers/Console.hpp
 String.hpp

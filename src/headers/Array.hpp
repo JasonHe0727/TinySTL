@@ -2,6 +2,7 @@
 #define ARRAY_HPP
 
 #include <memory>
+#include <initializer_list>
 
 template <typename T>
 class Array {
@@ -13,7 +14,7 @@ public:
 	Array(): length{0}, items{nullptr} {
 	}
 
-	Array(int length): length{length}, items{allocator.allocate(length)} {
+	explicit Array(int length): length{length}, items{allocator.allocate(length)} {
 	}
 
 	Array(const Array<T>& other) {
@@ -38,6 +39,13 @@ public:
 		return *this;
 	}
 		
+	Array(std::initializer_list<T> list): length{static_cast<int>(list.size())}, items{allocator.allocate(length)} {
+		int index = 0;
+		for(const T& item : list) {
+			items[index] = item;
+			index++;
+		}
+	}
 
 	inline T& operator[](int index) {
 		return items[index];

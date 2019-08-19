@@ -50,6 +50,8 @@ public:
 
 	Array<String> Split(const String& separator);
 
+	static String Join(const String& separator, const Array<String>& values);
+
     static String Empty;
 private:
     void Copy(const String &other);
