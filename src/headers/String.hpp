@@ -3,6 +3,7 @@
 
 #include <cstdint>
 #include "Array.hpp"
+#include "Char.hpp"
 
 class Encoding
 {
@@ -18,7 +19,7 @@ class String
 {
 private:
     int length;
-    uint16_t *characters;
+    Char *characters;
     int *refCount;
     mutable int cachedHashCode;
 public:
@@ -36,21 +37,23 @@ public:
 
     ~String();
 
-    const uint16_t &operator[](int index) const;
+    Char operator[](int index) const;
 
     int Length() const;
 
     int GetHashCode() const;
 
-	String Slice(int startIndex, int endIndex);
+	String Slice(int startIndex, int endIndex) const;
 
-	int IndexOf(const String& value);
+	int IndexOf(const String& value) const;
 
-	int IndexOf(const String& value, int startIndex);
+	int IndexOf(const String& value, int startIndex) const;
 
-	Array<String> Split(const String& separator);
+	Array<String> Split(const String& separator) const;
 
 	static String Join(const String& separator, const Array<String>& values);
+
+	Array<Char> ToCharArray() const;
 
     static String Empty;
 private:
@@ -58,7 +61,7 @@ private:
 };
 
 
-inline const uint16_t &String::operator[](int index) const
+inline Char String::operator[](int index) const
 {
     return characters[index];
 }

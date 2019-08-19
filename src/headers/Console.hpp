@@ -10,9 +10,9 @@ public:
 
     static void WriteLine(const String &string);
 
-    static void Write(const uint16_t& character);
+    static void Write(const Char& character);
 
-    static void WriteLine(const uint16_t& character);
+    static void WriteLine(const Char& character);
 
 	static void WriteInt(const int& i);
 

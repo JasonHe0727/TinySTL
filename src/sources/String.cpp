@@ -290,6 +290,7 @@ String::String()
 }
 
 String::String(const char *utf8Str)
+        : length{0}, characters{nullptr}, refCount{new int(1)}, cachedHashCode{0}
 {
     int count = Encoding::Utf8ToUtf16Count(utf8Str);
     if (count == -1)
@@ -299,8 +300,13 @@ String::String(const char *utf8Str)
     else
     {
         length = count;
-        characters = new uint16_t[length];
-        Encoding::Utf8ToUtf16(utf8Str, characters);
+        characters = new Char[length];
+		uint16_t* utf16Str = new uint16_t[length];
+        Encoding::Utf8ToUtf16(utf8Str, utf16Str);
+		for(int i = 0; i < length; i++) {
+			characters[i] = utf16Str[i];
+		}
+		delete[] utf16Str;
         refCount = new int(1);
         cachedHashCode = 0;
     }
@@ -366,21 +372,21 @@ int String::GetHashCode() const
     }
 }
 
-String String::Slice(int startIndex, int endIndex) {
+String String::Slice(int startIndex, int endIndex) const {
 	String result;
 	result.length = endIndex - startIndex;
-	result.characters = new uint16_t[result.length];
+	result.characters = new Char[result.length];
 	for(int i = startIndex; i < endIndex; i++) {
 		result.characters[i - startIndex] = operator[](i);
 	}
 	return result;
 }
 
-int String::IndexOf(const String& value) {
+int String::IndexOf(const String& value) const {
 	return IndexOf(value, 0);
 }
 
-int String::IndexOf(const String& value, int startIndex) {
+int String::IndexOf(const String& value, int startIndex) const {
 	for(int i = startIndex; i < Length(); i++) {
 		bool success = true;
 		for(int j = 0; j < value.Length(); j++) {
@@ -396,7 +402,7 @@ int String::IndexOf(const String& value, int startIndex) {
 	return (-1);
 }
 
-Array<String> String::Split(const String& separator) {
+Array<String> String::Split(const String& separator) const {
 	Array<int> sepList(length);
 	Array<int> lengthList(length);
 	int count = 0;
@@ -433,7 +439,7 @@ String String::Join(const String& separator, const Array<String>& values) {
 
 	String result;
 	result.length = count;
-	result.characters = new uint16_t[count];
+	result.characters = new Char[count];
 	int index = 0;
 	for(int i = 0; i < values.Length(); i++) {
 		if(i != 0) {
@@ -449,6 +455,14 @@ String String::Join(const String& separator, const Array<String>& values) {
 		}
 	}
 	return result;
+}
+
+Array<Char> String::ToCharArray() const {
+	Array<Char> array(length);
+	for(int i = 0; i < length; i++) {
+		array[i] = characters[i];
+	}
+	return array;
 }
 
 String String::Empty{};

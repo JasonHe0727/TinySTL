@@ -12,6 +12,10 @@ memory
 initializer_list
 -
 
+../src/headers/Char.hpp
+cstdint
+-
+
 ../src/headers/Console.hpp
 String.hpp
 ../src/headers/String.hpp
@@ -35,6 +39,8 @@ cstdint
 -
 Array.hpp
 ../src/headers/Array.hpp
+Char.hpp
+../src/headers/Char.hpp
 
 ../src/headers/StringBuilder.hpp
 
