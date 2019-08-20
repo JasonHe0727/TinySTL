@@ -17,14 +17,9 @@ public:
 	explicit Array(int length): length{length}, items{allocator.allocate(length)} {
 	}
 
-	Array(const Array<T>& other) {
-		Copy(other);
-	}
+	Array(const Array<T>& other) = delete;
 
-	Array<T>& operator=(const Array<T>& other) {
-		Copy(other);
-		return *this;
-	}
+	Array<T>& operator=(const Array<T>& other) = delete;
 
 	Array(Array<T>&& other): length{other.length}, items{other.items} {
 		other.length = 0;
@@ -56,6 +51,10 @@ public:
 	}
 
 	inline int Length() const {
+		return length;
+	}
+
+	inline int Size() const {
 		return length;
 	}
 

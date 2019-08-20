@@ -9,19 +9,40 @@ template <typename T>
 class List {
 private:
 	int count; // the count of elements
-	int realLength; // the length of the array
+	int capacity; // the length of the array
 	T* items;
 	std::allocator<T> allocator;
 public:
-	List(): count{0}, realLength{0}, items{nullptr} {
+	List(): count{0}, capacity{0}, items{nullptr} {
 	}
 
-	explicit List(int capacity): count{0}, realLength{capacity}, items(allocator.allocate(count)) {
+	explicit List(int capacity): count{0}, capacity{capacity}, items(allocator.allocate(count)) {
+	}
+
+	List(const List<T>& other) = delete;
+
+	List<T>& operator=(const List<T>& other) = delete;
+
+	List(List<T>&& other): count{other.count}, capacity{other.capacity},
+		items(other.items) {
+		other.count = 0;
+		other.capacity = 0;
+		other.items = nullptr;
+	}
+
+	List<T>& operator=(List<T>&& other) {
+		count = other.count;
+		capacity = other.capacity;
+		items = other.items;
+		other.count = 0;
+		other.capacity = 0;
+		other.items = nullptr;
+		return *this;
 	}
 
 	List(std::initializer_list<T> list) {
 		count = static_cast<int>(list.size());
-		realLength = count;
+		capacity = count;
 		items = allocator.allocate(count);
 		int index = 0;
 		for(const T& item : list) {
@@ -50,15 +71,15 @@ public:
 
 private:
 	void Ensure() {
-		if(count == realLength) {
-			if(realLength == 0) {
-				realLength = 4;
-			} else if(realLength >= std::numeric_limits<int>::max() / 2) {
-				realLength = std::numeric_limits<int>::max();
+		if(count == capacity) {
+			if(capacity == 0) {
+				capacity = 4;
+			} else if(capacity >= std::numeric_limits<int>::max() / 2) {
+				capacity = std::numeric_limits<int>::max();
 			} else {
-				realLength = realLength * 2;
+				capacity = capacity * 2;
 			}
-			T* newItems = allocator.allocate(realLength);
+			T* newItems = allocator.allocate(capacity);
 			for(int i = 0; i < count; i++) {
 				newItems[i] = items[i];
 			}
