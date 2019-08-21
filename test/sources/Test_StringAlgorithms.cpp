@@ -22,7 +22,7 @@ void Test_StringAlgorithms::Test1() {
 		"2RLA629",
 		"3ATW723"
 	};
-	LSD::sort(input, 6, 256);
+	LSD::Sort(input, 6, 256);
 
 	ASSERT_EQUAL(input.Size(), 13);
 	ASSERT_EQUAL(input[0], "1ICK750");

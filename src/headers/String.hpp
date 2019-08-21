@@ -27,6 +27,8 @@ public:
 
     String(const char *utf8Str);
 
+	explicit String(const Array<Char>& array);
+
     String(const String &other);
 
     String &operator=(const String &other) noexcept;
@@ -40,6 +42,8 @@ public:
     Char operator[](int index) const;
 
     int Length() const;
+
+	int Size() const;
 
     int GetHashCode() const;
 
@@ -58,6 +62,16 @@ public:
 	friend bool operator==(const String& x, const String& y);
 
 	friend bool operator!=(const String& x, const String& y);
+	
+	friend bool operator<(const String& x, const String& y);
+
+	friend bool operator>(const String& x, const String& y);
+
+	friend bool operator<=(const String& x, const String& y);
+
+	friend bool operator>=(const String& x, const String& y);
+
+	int CompareTo(const String& other) const;
 
     static String Empty;
 
@@ -76,4 +90,8 @@ inline int String::Length() const
     return length;
 }
 
+inline int String::Size() const
+{
+    return length;
+}
 #endif //STRING_HPP

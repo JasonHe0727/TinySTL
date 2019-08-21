@@ -204,6 +204,33 @@ src/sources/Exception.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.s
 .PHONY : src/sources/Exception.cpp.s
 
+src/sources/SortingAlgorithms.o: src/sources/SortingAlgorithms.cpp.o
+
+.PHONY : src/sources/SortingAlgorithms.o
+
+# target to build an object file
+src/sources/SortingAlgorithms.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.o
+.PHONY : src/sources/SortingAlgorithms.cpp.o
+
+src/sources/SortingAlgorithms.i: src/sources/SortingAlgorithms.cpp.i
+
+.PHONY : src/sources/SortingAlgorithms.i
+
+# target to preprocess a source file
+src/sources/SortingAlgorithms.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.i
+.PHONY : src/sources/SortingAlgorithms.cpp.i
+
+src/sources/SortingAlgorithms.s: src/sources/SortingAlgorithms.cpp.s
+
+.PHONY : src/sources/SortingAlgorithms.s
+
+# target to generate assembly for a file
+src/sources/SortingAlgorithms.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.s
+.PHONY : src/sources/SortingAlgorithms.cpp.s
+
 src/sources/String.o: src/sources/String.cpp.o
 
 .PHONY : src/sources/String.o
@@ -339,6 +366,33 @@ test/sources/Test_List.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.s
 .PHONY : test/sources/Test_List.cpp.s
 
+test/sources/Test_SortingAlgorithms.o: test/sources/Test_SortingAlgorithms.cpp.o
+
+.PHONY : test/sources/Test_SortingAlgorithms.o
+
+# target to build an object file
+test/sources/Test_SortingAlgorithms.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o
+.PHONY : test/sources/Test_SortingAlgorithms.cpp.o
+
+test/sources/Test_SortingAlgorithms.i: test/sources/Test_SortingAlgorithms.cpp.i
+
+.PHONY : test/sources/Test_SortingAlgorithms.i
+
+# target to preprocess a source file
+test/sources/Test_SortingAlgorithms.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.i
+.PHONY : test/sources/Test_SortingAlgorithms.cpp.i
+
+test/sources/Test_SortingAlgorithms.s: test/sources/Test_SortingAlgorithms.cpp.s
+
+.PHONY : test/sources/Test_SortingAlgorithms.s
+
+# target to generate assembly for a file
+test/sources/Test_SortingAlgorithms.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.s
+.PHONY : test/sources/Test_SortingAlgorithms.cpp.s
+
 test/sources/Test_String.o: test/sources/Test_String.cpp.o
 
 .PHONY : test/sources/Test_String.o
@@ -411,6 +465,9 @@ help:
 	@echo "... src/sources/Exception.o"
 	@echo "... src/sources/Exception.i"
 	@echo "... src/sources/Exception.s"
+	@echo "... src/sources/SortingAlgorithms.o"
+	@echo "... src/sources/SortingAlgorithms.i"
+	@echo "... src/sources/SortingAlgorithms.s"
 	@echo "... src/sources/String.o"
 	@echo "... src/sources/String.i"
 	@echo "... src/sources/String.s"
@@ -426,6 +483,9 @@ help:
 	@echo "... test/sources/Test_List.o"
 	@echo "... test/sources/Test_List.i"
 	@echo "... test/sources/Test_List.s"
+	@echo "... test/sources/Test_SortingAlgorithms.o"
+	@echo "... test/sources/Test_SortingAlgorithms.i"
+	@echo "... test/sources/Test_SortingAlgorithms.s"
 	@echo "... test/sources/Test_String.o"
 	@echo "... test/sources/Test_String.i"
 	@echo "... test/sources/Test_String.s"

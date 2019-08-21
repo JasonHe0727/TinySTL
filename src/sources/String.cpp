@@ -1,6 +1,6 @@
 #include "String.hpp"
 #include "Exception.hpp"
-#include "Console.hpp"
+#include <cmath>
 
 int Encoding::Utf8ToUtf16Count(const char *utf8)
 {
@@ -312,12 +312,20 @@ String::String(const char *utf8Str)
     }
 }
 
+String::String(const Array<Char>& array)
+        : length{array.Size()}, characters{new Char[length]}, refCount{new int(1)}, cachedHashCode{0}
+{
+	for(int i = 0; i < length; i++) {
+		characters[i] = array[i];
+	}
+}
+
 String::String(const String &other)
 {
     Copy(other);
 }
 
-String &String::operator=(const String &other) noexcept
+String& String::operator=(const String &other) noexcept
 {
     Copy(other);
     return *this;
@@ -490,6 +498,40 @@ bool operator==(const String& x, const String& y) {
 
 bool operator!=(const String& x, const String& y) {
 	return !(x == y);
+}
+
+bool operator>(const String& x, const String& y) {
+	return x.CompareTo(y) == 1;
+}
+
+bool operator<(const String& x, const String& y) {
+	return x.CompareTo(y) == -1;
+}
+
+bool operator>=(const String& x, const String& y) {
+	return x.CompareTo(y) >= 0;
+}
+
+bool operator<=(const String& x, const String& y) {
+	return x.CompareTo(y) <= 0;
+}
+
+int String::CompareTo(const String& other) const {
+	if(this == &other) {
+		return 0;
+	} else {
+		int minN = std::min(Length(), other.Length());
+		for(int i = 0; i < minN; i++) {
+			Char x = characters[i];
+			Char y = other.characters[i];
+			if(x > y) {
+				return (1);
+			} else if(x < y) {
+				return (-1);
+			}
+		}
+		return (0);
+	}
 }
 
 String String::Empty{};

@@ -21,6 +21,22 @@ public:
 		return left.value != right.value;
 	}
 
+	friend inline bool operator>(const Char& left, const Char& right) {
+		return left.value > right.value;
+	}
+
+	friend inline bool operator<(const Char& left, const Char& right) {
+		return left.value < right.value;
+	}
+
+	friend inline bool operator>=(const Char& left, const Char& right) {
+		return left.value >= right.value;
+	}
+
+	friend inline bool operator<=(const Char& left, const Char& right) {
+		return left.value <= right.value;
+	}
+
 	inline operator int() {
 		return value;
 	}
