@@ -5,7 +5,7 @@
 
 class LSD {
 public:
-	static void sort(Array<String>& array, int width);
+	static void sort(Array<String>& array, int width, int radix);
 };
 
 #endif // STRING_ALGORITHMS_HPP

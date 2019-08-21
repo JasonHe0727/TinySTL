@@ -5,8 +5,10 @@ CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/Console.hpp
- ../src/headers/List.hpp
  ../src/headers/String.hpp
+ ../test/headers/Test_List.hpp
+ ../test/headers/Test_String.hpp
+ ../test/headers/Test_StringAlgorithms.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/main.cpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o
  ../src/headers/Array.hpp
@@ -27,6 +29,37 @@ CMakeFiles/TinySTL.dir/src/sources/String.cpp.o
  ../src/headers/Exception.hpp
  ../src/headers/String.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/String.cpp
+CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/Char.hpp
+ ../src/headers/String.hpp
+ ../src/headers/StringAlgorithms.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringAlgorithms.cpp
 CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o
  ../src/headers/StringBuilder.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringBuilder.cpp
+CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.o
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.cpp
+CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/Char.hpp
+ ../src/headers/List.hpp
+ ../src/headers/String.hpp
+ ../test/headers/Assert.hpp
+ ../test/headers/Test_List.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_List.cpp
+CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/Char.hpp
+ ../src/headers/String.hpp
+ ../test/headers/Assert.hpp
+ ../test/headers/Test_String.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_String.cpp
+CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/Char.hpp
+ ../src/headers/String.hpp
+ ../src/headers/StringAlgorithms.hpp
+ ../test/headers/Assert.hpp
+ ../test/headers/Test_StringAlgorithms.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_StringAlgorithms.cpp

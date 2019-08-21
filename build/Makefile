@@ -231,6 +231,33 @@ src/sources/String.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/String.cpp.s
 .PHONY : src/sources/String.cpp.s
 
+src/sources/StringAlgorithms.o: src/sources/StringAlgorithms.cpp.o
+
+.PHONY : src/sources/StringAlgorithms.o
+
+# target to build an object file
+src/sources/StringAlgorithms.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o
+.PHONY : src/sources/StringAlgorithms.cpp.o
+
+src/sources/StringAlgorithms.i: src/sources/StringAlgorithms.cpp.i
+
+.PHONY : src/sources/StringAlgorithms.i
+
+# target to preprocess a source file
+src/sources/StringAlgorithms.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.i
+.PHONY : src/sources/StringAlgorithms.cpp.i
+
+src/sources/StringAlgorithms.s: src/sources/StringAlgorithms.cpp.s
+
+.PHONY : src/sources/StringAlgorithms.s
+
+# target to generate assembly for a file
+src/sources/StringAlgorithms.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.s
+.PHONY : src/sources/StringAlgorithms.cpp.s
+
 src/sources/StringBuilder.o: src/sources/StringBuilder.cpp.o
 
 .PHONY : src/sources/StringBuilder.o
@@ -258,6 +285,114 @@ src/sources/StringBuilder.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.s
 .PHONY : src/sources/StringBuilder.cpp.s
 
+test/sources/Assert.o: test/sources/Assert.cpp.o
+
+.PHONY : test/sources/Assert.o
+
+# target to build an object file
+test/sources/Assert.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.o
+.PHONY : test/sources/Assert.cpp.o
+
+test/sources/Assert.i: test/sources/Assert.cpp.i
+
+.PHONY : test/sources/Assert.i
+
+# target to preprocess a source file
+test/sources/Assert.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.i
+.PHONY : test/sources/Assert.cpp.i
+
+test/sources/Assert.s: test/sources/Assert.cpp.s
+
+.PHONY : test/sources/Assert.s
+
+# target to generate assembly for a file
+test/sources/Assert.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.s
+.PHONY : test/sources/Assert.cpp.s
+
+test/sources/Test_List.o: test/sources/Test_List.cpp.o
+
+.PHONY : test/sources/Test_List.o
+
+# target to build an object file
+test/sources/Test_List.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o
+.PHONY : test/sources/Test_List.cpp.o
+
+test/sources/Test_List.i: test/sources/Test_List.cpp.i
+
+.PHONY : test/sources/Test_List.i
+
+# target to preprocess a source file
+test/sources/Test_List.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.i
+.PHONY : test/sources/Test_List.cpp.i
+
+test/sources/Test_List.s: test/sources/Test_List.cpp.s
+
+.PHONY : test/sources/Test_List.s
+
+# target to generate assembly for a file
+test/sources/Test_List.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.s
+.PHONY : test/sources/Test_List.cpp.s
+
+test/sources/Test_String.o: test/sources/Test_String.cpp.o
+
+.PHONY : test/sources/Test_String.o
+
+# target to build an object file
+test/sources/Test_String.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o
+.PHONY : test/sources/Test_String.cpp.o
+
+test/sources/Test_String.i: test/sources/Test_String.cpp.i
+
+.PHONY : test/sources/Test_String.i
+
+# target to preprocess a source file
+test/sources/Test_String.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.i
+.PHONY : test/sources/Test_String.cpp.i
+
+test/sources/Test_String.s: test/sources/Test_String.cpp.s
+
+.PHONY : test/sources/Test_String.s
+
+# target to generate assembly for a file
+test/sources/Test_String.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.s
+.PHONY : test/sources/Test_String.cpp.s
+
+test/sources/Test_StringAlgorithms.o: test/sources/Test_StringAlgorithms.cpp.o
+
+.PHONY : test/sources/Test_StringAlgorithms.o
+
+# target to build an object file
+test/sources/Test_StringAlgorithms.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o
+.PHONY : test/sources/Test_StringAlgorithms.cpp.o
+
+test/sources/Test_StringAlgorithms.i: test/sources/Test_StringAlgorithms.cpp.i
+
+.PHONY : test/sources/Test_StringAlgorithms.i
+
+# target to preprocess a source file
+test/sources/Test_StringAlgorithms.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.i
+.PHONY : test/sources/Test_StringAlgorithms.cpp.i
+
+test/sources/Test_StringAlgorithms.s: test/sources/Test_StringAlgorithms.cpp.s
+
+.PHONY : test/sources/Test_StringAlgorithms.s
+
+# target to generate assembly for a file
+test/sources/Test_StringAlgorithms.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.s
+.PHONY : test/sources/Test_StringAlgorithms.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -279,9 +414,24 @@ help:
 	@echo "... src/sources/String.o"
 	@echo "... src/sources/String.i"
 	@echo "... src/sources/String.s"
+	@echo "... src/sources/StringAlgorithms.o"
+	@echo "... src/sources/StringAlgorithms.i"
+	@echo "... src/sources/StringAlgorithms.s"
 	@echo "... src/sources/StringBuilder.o"
 	@echo "... src/sources/StringBuilder.i"
 	@echo "... src/sources/StringBuilder.s"
+	@echo "... test/sources/Assert.o"
+	@echo "... test/sources/Assert.i"
+	@echo "... test/sources/Assert.s"
+	@echo "... test/sources/Test_List.o"
+	@echo "... test/sources/Test_List.i"
+	@echo "... test/sources/Test_List.s"
+	@echo "... test/sources/Test_String.o"
+	@echo "... test/sources/Test_String.i"
+	@echo "... test/sources/Test_String.s"
+	@echo "... test/sources/Test_StringAlgorithms.o"
+	@echo "... test/sources/Test_StringAlgorithms.i"
+	@echo "... test/sources/Test_StringAlgorithms.s"
 .PHONY : help
 
 

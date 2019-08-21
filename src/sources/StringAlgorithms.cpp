@@ -1,21 +1,20 @@
 #include "StringAlgorithms.hpp"
 
-void LSD::sort(Array<String>& array, int width) {
+void LSD::sort(Array<String>& array, int width, int radix) {
 	int N = array.Length();
-	int R = 256;
 	Array<String> aux(N);
 
-	Array<int> count(R + 1);
+	Array<int> count(radix + 1);
 	for(int d = width - 1; d >= 0; d--) {
 		for(int i = 0; i < count.Length(); i++) {
 			count[i] = 0;
 		}
 
 		for(int i = 0; i < N; i++) {
-			count[a[i][d] + 1]++;
+			count[array[i][d] + 1]++;
 		}
 
-		for(int r = 0; r < R; r++) {
+		for(int r = 0; r < radix; r++) {
 			count[r + 1] = count[r + 1] + count[r];
 		}
 
@@ -25,7 +24,7 @@ void LSD::sort(Array<String>& array, int width) {
 		}
 
 		for(int i = 0; i < N; i++) {
-			a[i] = aux[i];
+			array[i] = aux[i];
 		}
 	}
 }

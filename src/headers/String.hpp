@@ -55,7 +55,12 @@ public:
 
 	Array<Char> ToCharArray() const;
 
+	friend bool operator==(const String& x, const String& y);
+
+	friend bool operator!=(const String& x, const String& y);
+
     static String Empty;
+
 private:
     void Copy(const String &other);
 };

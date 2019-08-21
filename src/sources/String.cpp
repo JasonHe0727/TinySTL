@@ -465,4 +465,31 @@ Array<Char> String::ToCharArray() const {
 	return array;
 }
 
+bool operator==(const String& x, const String& y) {
+	if(&x == &y) {
+		return true;
+	} else {
+		if(x.cachedHashCode != 0 && y.cachedHashCode != 0) {
+			if(x.cachedHashCode != y.cachedHashCode) {
+				return false;
+			}
+		}
+		if(x.Length() != y.Length()) {
+			return false;
+		} else {
+			int n = x.Length();
+			for(int i = 0; i < n; i++) {
+				if(x.characters[i] != y.characters[i]) {
+					return false;
+				}
+			}
+			return true;
+		}
+	}
+}
+
+bool operator!=(const String& x, const String& y) {
+	return !(x == y);
+}
+
 String String::Empty{};
