@@ -366,6 +366,33 @@ test/sources/Test_List.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.s
 .PHONY : test/sources/Test_List.cpp.s
 
+test/sources/Test_Queue.o: test/sources/Test_Queue.cpp.o
+
+.PHONY : test/sources/Test_Queue.o
+
+# target to build an object file
+test/sources/Test_Queue.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o
+.PHONY : test/sources/Test_Queue.cpp.o
+
+test/sources/Test_Queue.i: test/sources/Test_Queue.cpp.i
+
+.PHONY : test/sources/Test_Queue.i
+
+# target to preprocess a source file
+test/sources/Test_Queue.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.i
+.PHONY : test/sources/Test_Queue.cpp.i
+
+test/sources/Test_Queue.s: test/sources/Test_Queue.cpp.s
+
+.PHONY : test/sources/Test_Queue.s
+
+# target to generate assembly for a file
+test/sources/Test_Queue.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.s
+.PHONY : test/sources/Test_Queue.cpp.s
+
 test/sources/Test_SortingAlgorithms.o: test/sources/Test_SortingAlgorithms.cpp.o
 
 .PHONY : test/sources/Test_SortingAlgorithms.o
@@ -392,6 +419,33 @@ test/sources/Test_SortingAlgorithms.s: test/sources/Test_SortingAlgorithms.cpp.s
 test/sources/Test_SortingAlgorithms.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.s
 .PHONY : test/sources/Test_SortingAlgorithms.cpp.s
+
+test/sources/Test_Stack.o: test/sources/Test_Stack.cpp.o
+
+.PHONY : test/sources/Test_Stack.o
+
+# target to build an object file
+test/sources/Test_Stack.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o
+.PHONY : test/sources/Test_Stack.cpp.o
+
+test/sources/Test_Stack.i: test/sources/Test_Stack.cpp.i
+
+.PHONY : test/sources/Test_Stack.i
+
+# target to preprocess a source file
+test/sources/Test_Stack.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.i
+.PHONY : test/sources/Test_Stack.cpp.i
+
+test/sources/Test_Stack.s: test/sources/Test_Stack.cpp.s
+
+.PHONY : test/sources/Test_Stack.s
+
+# target to generate assembly for a file
+test/sources/Test_Stack.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.s
+.PHONY : test/sources/Test_Stack.cpp.s
 
 test/sources/Test_String.o: test/sources/Test_String.cpp.o
 
@@ -483,9 +537,15 @@ help:
 	@echo "... test/sources/Test_List.o"
 	@echo "... test/sources/Test_List.i"
 	@echo "... test/sources/Test_List.s"
+	@echo "... test/sources/Test_Queue.o"
+	@echo "... test/sources/Test_Queue.i"
+	@echo "... test/sources/Test_Queue.s"
 	@echo "... test/sources/Test_SortingAlgorithms.o"
 	@echo "... test/sources/Test_SortingAlgorithms.i"
 	@echo "... test/sources/Test_SortingAlgorithms.s"
+	@echo "... test/sources/Test_Stack.o"
+	@echo "... test/sources/Test_Stack.i"
+	@echo "... test/sources/Test_Stack.s"
 	@echo "... test/sources/Test_String.o"
 	@echo "... test/sources/Test_String.i"
 	@echo "... test/sources/Test_String.s"

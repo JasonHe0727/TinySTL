@@ -5,11 +5,16 @@ CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/Console.hpp
+ ../src/headers/Option.hpp
+ ../src/headers/Queue.hpp
  ../src/headers/SortingAlgorithms.hpp
  ../src/headers/Stack.hpp
  ../src/headers/String.hpp
+ ../src/headers/StringAlgorithms.hpp
  ../test/headers/Test_List.hpp
+ ../test/headers/Test_Queue.hpp
  ../test/headers/Test_SortingAlgorithms.hpp
+ ../test/headers/Test_Stack.hpp
  ../test/headers/Test_String.hpp
  ../test/headers/Test_StringAlgorithms.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/main.cpp
@@ -52,6 +57,11 @@ CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o
  ../test/headers/Assert.hpp
  ../test/headers/Test_List.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_List.cpp
+CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o
+ ../src/headers/Queue.hpp
+ ../test/headers/Assert.hpp
+ ../test/headers/Test_Queue.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Queue.cpp
 CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
@@ -60,6 +70,11 @@ CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o
  ../test/headers/Assert.hpp
  ../test/headers/Test_SortingAlgorithms.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_SortingAlgorithms.cpp
+CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o
+ ../src/headers/Stack.hpp
+ ../test/headers/Assert.hpp
+ ../test/headers/Test_Stack.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Stack.cpp
 CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
@@ -70,6 +85,7 @@ CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o
 CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
+ ../src/headers/Console.hpp
  ../src/headers/String.hpp
  ../src/headers/StringAlgorithms.hpp
  ../test/headers/Assert.hpp

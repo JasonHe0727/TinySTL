@@ -15,5 +15,6 @@ private:
 	static int CharAt(const String& s, int width);
 	static void Sort(Array<String>& array, int low, int high, int width, Array<String>& aux, int radix);
 	static void InsertionSort(Array<String>& array, int low, int high, int width);
+	static bool Less(const String& v, const String& w, int width);
 };
 #endif // STRING_ALGORITHMS_HPP

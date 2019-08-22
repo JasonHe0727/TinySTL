@@ -61,8 +61,9 @@ void MSD::Sort(Array<String>& array, int low, int high, int width, Array<String>
 			count[r + 1] = count[r + 1] + count[r];
 		}
 		for(int i = low; i <= high; i++) {
-			aux[count[CharAt(array[i], width) + 1]] = array[i];
-			count[CharAt(array[i], width) + 1]++;
+			int n = CharAt(array[i], width) + 1;
+			aux[count[n]] = array[i];
+			count[n]++;
 		}
 		for(int i = low; i <= high; i++) {
 			array[i] = aux[i - low];
@@ -74,9 +75,13 @@ void MSD::Sort(Array<String>& array, int low, int high, int width, Array<String>
 }
 
 void MSD::InsertionSort(Array<String>& array, int low, int high, int width) {
-	for(int i = low + 1; i < high; i++) {
-		for(int j = i; j > 0 && (array[j][width] < array[j - 1][width]); j--) {
+	for(int i = low; i <= high; i++) {
+		for(int j = i; j > low && Less(array[j], array[j - 1], width); j--) {
 			std::swap(array[j], array[j - 1]);
 		}
 	}
+}
+
+bool MSD::Less(const String& v, const String& w, int width) {
+	return v.Slice(width, v.Length()) < w.Slice(width, w.Length());
 }

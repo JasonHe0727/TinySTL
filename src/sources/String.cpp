@@ -501,11 +501,11 @@ bool operator!=(const String& x, const String& y) {
 }
 
 bool operator>(const String& x, const String& y) {
-	return x.CompareTo(y) == 1;
+	return x.CompareTo(y) > 0;
 }
 
 bool operator<(const String& x, const String& y) {
-	return x.CompareTo(y) == -1;
+	return x.CompareTo(y) < 0;
 }
 
 bool operator>=(const String& x, const String& y) {
@@ -530,8 +530,25 @@ int String::CompareTo(const String& other) const {
 				return (-1);
 			}
 		}
-		return (0);
+		if(Length() > other.Length()) {
+			return 1;
+		} else if(Length() < other.Length()) {
+			return -1;
+		} else {
+			return 0;
+		}
 	}
+}
+
+String operator+(const String& x, const Char& y) {
+	String res;
+	res.length = x.Length() + 1;
+	res.characters = new Char[res.length];
+	for(int i = 0; i < x.Length(); i++) {
+		res.characters[i] = x[i];
+	}
+	res.characters[x.Length()] = y;
+	return res;
 }
 
 String String::Empty{};

@@ -5,27 +5,33 @@
 #include "Test_StringAlgorithms.hpp"
 #include "Test_SortingAlgorithms.hpp"
 #include "SortingAlgorithms.hpp"
+#include "StringAlgorithms.hpp"
 #include "Stack.hpp"
+#include "Queue.hpp"
+#include "Option.hpp"
+#include "Test_Stack.hpp"
+#include "Test_Queue.hpp"
 
 using std::cout;
 using std::endl;
 
-int main()
-{
+void TestAllCases();
+
+void TestAllCases() {
 	Test_List::TestAll();
 	Test_String::TestAll();
 	Test_StringAlgorithms::TestAll();
 	Test_SortingAlgorithms::TestAll();
+	Test_Stack::TestAll();
+	Test_Queue::TestAll();
+}
 
-	Stack<int> stack;
-	stack.Push(10);
-	stack.Push(20);
-	stack.Push(30);
+int main()
+{
+	TestAllCases();
 
-	while(not stack.IsEmpty()) {
-		Console::WriteIntLine(stack.Top());
-		stack.Pop();
+	if(Option<String> a = String("DIGITAL PAPER")) {
+		Console::WriteLine(a.Get());
 	}
-
     return 0;
 }

@@ -73,6 +73,8 @@ public:
 
 	int CompareTo(const String& other) const;
 
+	friend String operator+(const String& x, const Char& y);
+
     static String Empty;
 
 private:

@@ -34,6 +34,16 @@ limits
 initializer_list
 -
 
+../src/headers/Option.hpp
+type_traits
+-
+
+../src/headers/Queue.hpp
+memory
+-
+limits
+-
+
 ../src/headers/SortingAlgorithms.hpp
 algorithm
 -
@@ -64,7 +74,11 @@ iostream
 
 ../test/headers/Test_List.hpp
 
+../test/headers/Test_Queue.hpp
+
 ../test/headers/Test_SortingAlgorithms.hpp
+
+../test/headers/Test_Stack.hpp
 
 ../test/headers/Test_String.hpp
 
@@ -85,8 +99,18 @@ Test_SortingAlgorithms.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Test_SortingAlgorithms.hpp
 SortingAlgorithms.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/SortingAlgorithms.hpp
+StringAlgorithms.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/StringAlgorithms.hpp
 Stack.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Stack.hpp
+Queue.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Queue.hpp
+Option.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Option.hpp
+Test_Stack.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Stack.hpp
+Test_Queue.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Queue.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 Console.hpp
@@ -132,6 +156,14 @@ String.hpp
 iostream
 -
 
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Queue.cpp
+Test_Queue.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Queue.hpp
+Assert.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.hpp
+Queue.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Queue.hpp
+
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_SortingAlgorithms.cpp
 Test_SortingAlgorithms.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_SortingAlgorithms.hpp
@@ -141,6 +173,14 @@ Assert.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.hpp
 SortingAlgorithms.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/SortingAlgorithms.hpp
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Stack.cpp
+Test_Stack.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Stack.hpp
+Stack.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Stack.hpp
+Assert.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_String.cpp
 Test_String.hpp
@@ -159,4 +199,6 @@ StringAlgorithms.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/StringAlgorithms.hpp
 Assert.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.hpp
+Console.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Console.hpp
 

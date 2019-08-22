@@ -1,9 +1,11 @@
 #include "Test_StringAlgorithms.hpp"
 #include "StringAlgorithms.hpp"
 #include "Assert.hpp"
+#include "Console.hpp"
 
 void Test_StringAlgorithms::TestAll() {
 	Test1();
+	Test2();
 }
 
 void Test_StringAlgorithms::Test1() {
@@ -38,6 +40,44 @@ void Test_StringAlgorithms::Test1() {
 	ASSERT_EQUAL(input[10], "3CIO720");
 	ASSERT_EQUAL(input[11], "4JZY524");
 	ASSERT_EQUAL(input[12], "4PGC938");
+
+	ASSERT_PASS;
+}
+
+void Test_StringAlgorithms::Test2() {
+	Array<String> words = {
+		"she",
+		"sells",
+		"seashells",
+		"by",
+		"the",
+		"sea",
+		"shore",
+		"the",
+		"shells",
+		"she",
+		"sells",
+		"are",
+		"surely",
+		"seashells"
+	};
+
+	MSD::Sort(words, 256);
+
+	ASSERT_EQUAL(words[0], "are");
+	ASSERT_EQUAL(words[1], "by");
+	ASSERT_EQUAL(words[2], "sea");
+	ASSERT_EQUAL(words[3], "seashells");
+	ASSERT_EQUAL(words[4], "seashells");
+	ASSERT_EQUAL(words[5], "sells");
+	ASSERT_EQUAL(words[6], "sells");
+	ASSERT_EQUAL(words[7], "she");
+	ASSERT_EQUAL(words[8], "she");
+	ASSERT_EQUAL(words[9], "shells");
+	ASSERT_EQUAL(words[10], "shore");
+	ASSERT_EQUAL(words[11], "surely");
+	ASSERT_EQUAL(words[12], "the");
+	ASSERT_EQUAL(words[13], "the");
 
 	ASSERT_PASS;
 }

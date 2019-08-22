@@ -273,9 +273,33 @@ CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o.provides: CMakeFiles/TinySTL
 CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o.provides.build: CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o
 
 
+CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o: CMakeFiles/TinySTL.dir/flags.make
+CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o: ../test/sources/Test_Queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o -c /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Queue.cpp
+
+CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Queue.cpp > CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.i
+
+CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Queue.cpp -o CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.s
+
+CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o.requires:
+
+.PHONY : CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o.requires
+
+CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o.provides: CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o.provides.build
+.PHONY : CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o.provides
+
+CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o.provides.build: CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o
+
+
 CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o: CMakeFiles/TinySTL.dir/flags.make
 CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o: ../test/sources/Test_SortingAlgorithms.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o -c /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_SortingAlgorithms.cpp
 
 CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.i: cmake_force
@@ -297,9 +321,33 @@ CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o.provides: CMake
 CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o.provides.build: CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o
 
 
+CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o: CMakeFiles/TinySTL.dir/flags.make
+CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o: ../test/sources/Test_Stack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o -c /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Stack.cpp
+
+CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Stack.cpp > CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.i
+
+CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Stack.cpp -o CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.s
+
+CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o.requires:
+
+.PHONY : CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o.requires
+
+CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o.provides: CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o.provides.build
+.PHONY : CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o.provides
+
+CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o.provides.build: CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o
+
+
 CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o: CMakeFiles/TinySTL.dir/flags.make
 CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o: ../test/sources/Test_String.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o -c /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_String.cpp
 
 CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.i: cmake_force
@@ -323,7 +371,7 @@ CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o: CMakeFiles/TinySTL.dir/flags.make
 CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o: ../test/sources/Test_StringAlgorithms.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o -c /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_StringAlgorithms.cpp
 
 CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.i: cmake_force
@@ -356,7 +404,9 @@ TinySTL_OBJECTS = \
 "CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o" \
 "CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.o" \
 "CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o" \
+"CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o" \
 "CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o" \
+"CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o" \
 "CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o" \
 "CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o"
 
@@ -372,12 +422,14 @@ TinySTL: CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o
+TinySTL: CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o
+TinySTL: CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o
 TinySTL: CMakeFiles/TinySTL.dir/build.make
 TinySTL: CMakeFiles/TinySTL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable TinySTL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable TinySTL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TinySTL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -394,7 +446,9 @@ CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/src/sources/StringAlgori
 CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o.requires
 CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.o.requires
 CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o.requires
+CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o.requires
 CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o.requires
+CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o.requires
 CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o.requires
 CMakeFiles/TinySTL.dir/requires: CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o.requires
 
