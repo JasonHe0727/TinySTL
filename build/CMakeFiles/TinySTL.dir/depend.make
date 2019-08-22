@@ -24,6 +24,7 @@ CMakeFiles/TinySTL.dir/main.cpp.o: ../main.cpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Array.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Char.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Console.hpp
+CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Option.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/String.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/sources/Console.cpp
 
@@ -96,6 +97,7 @@ CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o: ../test/sources/Test_Stri
 CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o: ../src/headers/Array.hpp
 CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o: ../src/headers/Char.hpp
 CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o: ../src/headers/Console.hpp
+CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o: ../src/headers/Option.hpp
 CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o: ../src/headers/String.hpp
 CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o: ../src/headers/StringAlgorithms.hpp
 CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o: ../test/headers/Assert.hpp

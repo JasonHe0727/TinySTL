@@ -48,3 +48,23 @@ void Console::WriteLine()
 {
     std::cout << std::endl;
 }
+
+Option<int> Console::ReadInt() {
+	int value;
+	std::cin >> value;
+	if(std::cin.fail()) {
+		return Option<int>();
+	} else {
+		return value;
+	}
+}
+
+Option<double> Console::ReadDouble() {
+	double value;
+	std::cin >> value;
+	if(std::cin.fail()) {
+		return Option<double>();
+	} else {
+		return value;
+	}
+}

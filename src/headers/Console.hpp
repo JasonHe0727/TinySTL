@@ -2,6 +2,7 @@
 #define CONSOLE_HPP
 
 #include "String.hpp"
+#include "Option.hpp"
 
 class Console
 {
@@ -19,6 +20,10 @@ public:
 	static void WriteIntLine(const int& i);
 
     static void WriteLine();
+
+	static Option<int> ReadInt();
+
+	static Option<double> ReadDouble();
 };
 
 

@@ -19,6 +19,8 @@ cstdint
 ../src/headers/Console.hpp
 String.hpp
 ../src/headers/String.hpp
+Option.hpp
+../src/headers/Option.hpp
 
 ../src/headers/Exception.hpp
 exception

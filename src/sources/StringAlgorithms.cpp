@@ -85,3 +85,75 @@ void MSD::InsertionSort(Array<String>& array, int low, int high, int width) {
 bool MSD::Less(const String& v, const String& w, int width) {
 	return v.Slice(width, v.Length()) < w.Slice(width, w.Length());
 }
+
+KMP::KMP(): pattern(), dfa() {
+}
+
+KMP::KMP(const String& pattern, int radix): pattern{pattern}, dfa(radix) {
+	int M = pattern.Length();
+	for(int i = 0; i < radix; i++) {
+		dfa[i] = Array<int>(M);
+		for(int j = 0; j < M; j++) {
+			dfa[i][j] = 0;
+		}
+	}
+	dfa[pattern[0]][0] = 1;
+	for(int X = 0, j = 1; j < M; j++) {
+		for(int c = 0; c < radix; c++) {
+			dfa[c][j] = dfa[c][X];
+		}
+		dfa[pattern[j]][j] = j + 1;
+		X = dfa[pattern[j]][X];
+	}
+}
+
+int KMP::Search(const String& text) const {
+	int i = 0;
+	int j = 0;
+	int N = text.Length();
+	int M = pattern.Length();
+	for(; i < N and j < M; i++) {
+		j = dfa[text[i]][j];
+	}
+	if(j == M) {
+		return i - M;
+	} else {
+		return N;
+	}
+}
+
+BoyerMoore::BoyerMoore(): pattern{}, right{} {
+}
+
+BoyerMoore::BoyerMoore(const String& pattern, int radix)
+	: pattern{pattern}, right(radix) {
+	int M = pattern.Length();
+	for(int c = 0; c < radix; c++) {
+		right[c] = -1;
+	}
+	for(int j = 0; j < M; j++) {
+		right[pattern[j]] = j;
+	}
+}
+
+int BoyerMoore::Search(const String& text) const {
+	int N = text.Length();
+	int M = pattern.Length();
+	int skip = 0;
+	for(int i = 0; i <= N - M; i = i + skip) {
+		skip = 0;
+		for (int j = M - 1; j >= 0; j--) {
+			if(pattern[j] != text[i + j]) {
+				skip = j - right[text[i + j]];
+				if(skip < 1) {
+					skip = 1;
+				}
+				break;
+			}
+		}
+		if(skip == 0) {
+			return i;
+		}
+	}
+	return N;
+}

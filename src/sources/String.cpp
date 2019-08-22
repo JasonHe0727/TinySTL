@@ -331,24 +331,39 @@ String& String::operator=(const String &other) noexcept
     return *this;
 }
 
-String::String(String&& other) {
-	Copy(other);
+String::String(String&& other)
+	: length{other.length}, characters{other.characters}, refCount{other.refCount}, cachedHashCode{other.cachedHashCode} {
+	other.length = 0;
+	other.characters = nullptr;
+	other.refCount = nullptr;
+	other.cachedHashCode = 0;
 }
 
 String& String::operator=(String&& other) noexcept
 {
-	Copy(other);
+	length = other.length;
+	characters = other.characters;
+	refCount = other.refCount;
+	cachedHashCode = other.cachedHashCode;
+
+	other.length = 0;
+	other.characters = nullptr;
+	other.refCount = nullptr;
+	other.cachedHashCode = 0;
+
 	return *this;
 }
 
 String::~String()
 {
-    (*refCount)--;
-    if ((*refCount) == 0)
-    {
-        delete[] characters;
-        delete refCount;
-    }
+	if(refCount) {
+		(*refCount)--;
+		if ((*refCount) == 0)
+		{
+			delete[] characters;
+			delete refCount;
+		}
+	}
 }
 
 void String::Copy(const String &other)
