@@ -1,16 +1,19 @@
 #include <iostream>
-#include "Console.hpp"
 #include "Test_List.hpp"
 #include "Test_String.hpp"
 #include "Test_StringAlgorithms.hpp"
 #include "Test_SortingAlgorithms.hpp"
+#include "Test_Stack.hpp"
+#include "Test_Queue.hpp"
+#include "Test_Option.hpp"
+#include "Test_Trie.hpp"
+#include "Console.hpp"
 #include "SortingAlgorithms.hpp"
 #include "StringAlgorithms.hpp"
 #include "Stack.hpp"
 #include "Queue.hpp"
 #include "Option.hpp"
-#include "Test_Stack.hpp"
-#include "Test_Queue.hpp"
+#include "Trie.hpp"
 
 using std::cout;
 using std::endl;
@@ -24,14 +27,13 @@ void TestAllCases() {
 	Test_SortingAlgorithms::TestAll();
 	Test_Stack::TestAll();
 	Test_Queue::TestAll();
+	Test_Option::TestAll();
+	Test_Trie::TestAll();
 }
 
 int main()
 {
 	TestAllCases();
 
-	if(Option<String> a = String("DIGITAL PAPER")) {
-		Console::WriteLine(a.Get());
-	}
     return 0;
 }

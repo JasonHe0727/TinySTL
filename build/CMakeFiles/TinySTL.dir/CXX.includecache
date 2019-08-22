@@ -68,11 +68,23 @@ String.hpp
 
 ../src/headers/StringBuilder.hpp
 
+../src/headers/Trie.hpp
+String.hpp
+../src/headers/String.hpp
+Array.hpp
+../src/headers/Array.hpp
+Queue.hpp
+../src/headers/Queue.hpp
+Option.hpp
+../src/headers/Option.hpp
+
 ../test/headers/Assert.hpp
 iostream
 -
 
 ../test/headers/Test_List.hpp
+
+../test/headers/Test_Option.hpp
 
 ../test/headers/Test_Queue.hpp
 
@@ -84,11 +96,11 @@ iostream
 
 ../test/headers/Test_StringAlgorithms.hpp
 
+../test/headers/Test_Trie.hpp
+
 /home/heyanjie/Documents/MyCode/C++/TinySTL/main.cpp
 iostream
 -
-Console.hpp
-/home/heyanjie/Documents/MyCode/C++/TinySTL/Console.hpp
 Test_List.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Test_List.hpp
 Test_String.hpp
@@ -97,6 +109,16 @@ Test_StringAlgorithms.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Test_StringAlgorithms.hpp
 Test_SortingAlgorithms.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Test_SortingAlgorithms.hpp
+Test_Stack.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Stack.hpp
+Test_Queue.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Queue.hpp
+Test_Option.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Option.hpp
+Test_Trie.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Trie.hpp
+Console.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Console.hpp
 SortingAlgorithms.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/SortingAlgorithms.hpp
 StringAlgorithms.hpp
@@ -107,10 +129,8 @@ Queue.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Queue.hpp
 Option.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Option.hpp
-Test_Stack.hpp
-/home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Stack.hpp
-Test_Queue.hpp
-/home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Queue.hpp
+Trie.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Trie.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 Console.hpp
@@ -155,6 +175,16 @@ String.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/String.hpp
 iostream
 -
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Option.cpp
+Test_Option.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Option.hpp
+String.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/String.hpp
+Option.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Option.hpp
+Assert.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Queue.cpp
 Test_Queue.hpp
@@ -201,4 +231,12 @@ Assert.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.hpp
 Console.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Console.hpp
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Trie.cpp
+Test_Trie.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Trie.hpp
+Trie.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Trie.hpp
+Assert.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.hpp
 

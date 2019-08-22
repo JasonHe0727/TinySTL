@@ -366,6 +366,33 @@ test/sources/Test_List.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.s
 .PHONY : test/sources/Test_List.cpp.s
 
+test/sources/Test_Option.o: test/sources/Test_Option.cpp.o
+
+.PHONY : test/sources/Test_Option.o
+
+# target to build an object file
+test/sources/Test_Option.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Option.cpp.o
+.PHONY : test/sources/Test_Option.cpp.o
+
+test/sources/Test_Option.i: test/sources/Test_Option.cpp.i
+
+.PHONY : test/sources/Test_Option.i
+
+# target to preprocess a source file
+test/sources/Test_Option.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Option.cpp.i
+.PHONY : test/sources/Test_Option.cpp.i
+
+test/sources/Test_Option.s: test/sources/Test_Option.cpp.s
+
+.PHONY : test/sources/Test_Option.s
+
+# target to generate assembly for a file
+test/sources/Test_Option.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Option.cpp.s
+.PHONY : test/sources/Test_Option.cpp.s
+
 test/sources/Test_Queue.o: test/sources/Test_Queue.cpp.o
 
 .PHONY : test/sources/Test_Queue.o
@@ -501,6 +528,33 @@ test/sources/Test_StringAlgorithms.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.s
 .PHONY : test/sources/Test_StringAlgorithms.cpp.s
 
+test/sources/Test_Trie.o: test/sources/Test_Trie.cpp.o
+
+.PHONY : test/sources/Test_Trie.o
+
+# target to build an object file
+test/sources/Test_Trie.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Trie.cpp.o
+.PHONY : test/sources/Test_Trie.cpp.o
+
+test/sources/Test_Trie.i: test/sources/Test_Trie.cpp.i
+
+.PHONY : test/sources/Test_Trie.i
+
+# target to preprocess a source file
+test/sources/Test_Trie.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Trie.cpp.i
+.PHONY : test/sources/Test_Trie.cpp.i
+
+test/sources/Test_Trie.s: test/sources/Test_Trie.cpp.s
+
+.PHONY : test/sources/Test_Trie.s
+
+# target to generate assembly for a file
+test/sources/Test_Trie.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Trie.cpp.s
+.PHONY : test/sources/Test_Trie.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -537,6 +591,9 @@ help:
 	@echo "... test/sources/Test_List.o"
 	@echo "... test/sources/Test_List.i"
 	@echo "... test/sources/Test_List.s"
+	@echo "... test/sources/Test_Option.o"
+	@echo "... test/sources/Test_Option.i"
+	@echo "... test/sources/Test_Option.s"
 	@echo "... test/sources/Test_Queue.o"
 	@echo "... test/sources/Test_Queue.i"
 	@echo "... test/sources/Test_Queue.s"
@@ -552,6 +609,9 @@ help:
 	@echo "... test/sources/Test_StringAlgorithms.o"
 	@echo "... test/sources/Test_StringAlgorithms.i"
 	@echo "... test/sources/Test_StringAlgorithms.s"
+	@echo "... test/sources/Test_Trie.o"
+	@echo "... test/sources/Test_Trie.i"
+	@echo "... test/sources/Test_Trie.s"
 .PHONY : help
 
 

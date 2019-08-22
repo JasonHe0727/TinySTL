@@ -8,11 +8,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o"
+  "CMakeFiles/TinySTL.dir/test/sources/Test_Option.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o"
+  "CMakeFiles/TinySTL.dir/test/sources/Test_Trie.cpp.o"
   "TinySTL.pdb"
   "TinySTL"
 )
