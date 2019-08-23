@@ -1,19 +1,8 @@
 #ifndef STRING_HPP
 #define STRING_HPP
 
-#include <cstdint>
 #include "Array.hpp"
 #include "Char.hpp"
-
-class Encoding
-{
-public:
-    static int Utf8ToUtf16Count(const char *utf8);
-
-    static void Utf8ToUtf16(const char *utf8, uint16_t *result);
-
-    static uint8_t *Utf16CharacterToUtf8(uint16_t code);
-};
 
 class String
 {

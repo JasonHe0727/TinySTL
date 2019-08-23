@@ -24,9 +24,18 @@ CMakeFiles/TinySTL.dir/main.cpp.o: ../main.cpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Array.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Char.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Console.hpp
+CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Encoding.hpp
+CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Exception.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Option.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/String.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/sources/Console.cpp
+
+CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/Array.hpp
+CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/Char.hpp
+CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/Encoding.hpp
+CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/Exception.hpp
+CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/String.hpp
+CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/sources/Encoding.cpp
 
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o: ../src/headers/Array.hpp
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o: ../src/headers/Char.hpp
@@ -38,6 +47,7 @@ CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.o: ../src/sources/Sorti
 
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/headers/Array.hpp
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/headers/Char.hpp
+CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/headers/Encoding.hpp
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/headers/Exception.hpp
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/headers/String.hpp
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/sources/String.cpp

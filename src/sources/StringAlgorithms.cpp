@@ -157,3 +157,34 @@ int BoyerMoore::Search(const String& text) const {
 	}
 	return N;
 }
+
+//RabinKarp::RabinKarp(const String pattern, int radix)
+//	: pattern{pattern}, patternHash{0}, M{pattern.Length()}, Q{LongRandomPrime()}, RM{1} {
+//	for(int i = 1; i <= M - 1; i++) {
+//		RM = (R * RM) % Q;
+//	}
+//	patternHash = Hash(pattern, M);
+//}
+//
+//bool RabinKarp::Check(int i) {
+//	return true;
+//}
+//long RabinKarp::Hash(const String& key, int M) {
+//}
+//int RabinKarp::Search(const String& text) {
+//	int N = text.Length();
+//	long textHash = Hash(text, M);
+//	if(patternHash == textHash) {
+//		return 0;
+//	}
+//	for(int i = M; i < N; i++) {
+//		textHash = (textHash + Q - RM * text[i - M].ToInt() % Q) % Q;
+//		textHash = (textHash * R + text[i]) % Q;
+//		if(patternHash == textHash) {
+//			if(Check(i - M + 1)) {
+//				return i - M + 1;
+//			}
+//		}
+//	}
+//	return N;
+//}

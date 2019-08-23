@@ -25,9 +25,18 @@ CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/Console.hpp
+ ../src/headers/Encoding.hpp
+ ../src/headers/Exception.hpp
  ../src/headers/Option.hpp
  ../src/headers/String.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
+CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/Char.hpp
+ ../src/headers/Encoding.hpp
+ ../src/headers/Exception.hpp
+ ../src/headers/String.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.cpp
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
@@ -39,6 +48,7 @@ CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.o
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
+ ../src/headers/Encoding.hpp
  ../src/headers/Exception.hpp
  ../src/headers/String.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/String.cpp

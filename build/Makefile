@@ -177,6 +177,33 @@ src/sources/Console.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Console.cpp.s
 .PHONY : src/sources/Console.cpp.s
 
+src/sources/Encoding.o: src/sources/Encoding.cpp.o
+
+.PHONY : src/sources/Encoding.o
+
+# target to build an object file
+src/sources/Encoding.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o
+.PHONY : src/sources/Encoding.cpp.o
+
+src/sources/Encoding.i: src/sources/Encoding.cpp.i
+
+.PHONY : src/sources/Encoding.i
+
+# target to preprocess a source file
+src/sources/Encoding.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.i
+.PHONY : src/sources/Encoding.cpp.i
+
+src/sources/Encoding.s: src/sources/Encoding.cpp.s
+
+.PHONY : src/sources/Encoding.s
+
+# target to generate assembly for a file
+src/sources/Encoding.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.s
+.PHONY : src/sources/Encoding.cpp.s
+
 src/sources/Exception.o: src/sources/Exception.cpp.o
 
 .PHONY : src/sources/Exception.o
@@ -570,6 +597,9 @@ help:
 	@echo "... src/sources/Console.o"
 	@echo "... src/sources/Console.i"
 	@echo "... src/sources/Console.s"
+	@echo "... src/sources/Encoding.o"
+	@echo "... src/sources/Encoding.i"
+	@echo "... src/sources/Encoding.s"
 	@echo "... src/sources/Exception.o"
 	@echo "... src/sources/Exception.i"
 	@echo "... src/sources/Exception.s"

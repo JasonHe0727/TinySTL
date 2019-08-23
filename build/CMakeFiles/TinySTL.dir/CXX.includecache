@@ -22,6 +22,10 @@ String.hpp
 Option.hpp
 ../src/headers/Option.hpp
 
+../src/headers/Encoding.hpp
+cstdint
+-
+
 ../src/headers/Exception.hpp
 exception
 -
@@ -57,8 +61,6 @@ limits
 -
 
 ../src/headers/String.hpp
-cstdint
--
 Array.hpp
 ../src/headers/Array.hpp
 Char.hpp
@@ -137,8 +139,18 @@ Trie.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 Console.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.hpp
+Encoding.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.hpp
+Exception.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.hpp
 iostream
 -
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.cpp
+Encoding.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.hpp
+Exception.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.cpp
 Exception.hpp
@@ -151,6 +163,8 @@ String.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/String.hpp
 Exception.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.hpp
+Encoding.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.hpp
 cmath
 -
 

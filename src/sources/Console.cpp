@@ -1,4 +1,6 @@
 #include "Console.hpp"
+#include "Encoding.hpp"
+#include "Exception.hpp"
 #include <iostream>
 
 void Console::Write(const String &string)

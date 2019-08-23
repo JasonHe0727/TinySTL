@@ -39,4 +39,21 @@ public:
 	BoyerMoore(const String& pattern, int radix);
 	int Search(const String& text) const;
 };
+
+//class RabinKarp {
+//private:
+//	String pattern;
+//	long patternHash;
+//	int M;
+//	long Q; // a large prime
+//	int radix;
+//	long RM; // R^(M - 1) % Q
+//public:
+//	RabinKarp() = default;
+//	RabinKarp(const String pattern, int radix);
+//	bool Check(int i);
+//	long Hash(const String& key, int M);
+//	int Search(const String& text);
+//};
+
 #endif // STRING_ALGORITHMS_HPP
