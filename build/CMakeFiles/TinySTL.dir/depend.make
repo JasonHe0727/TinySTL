@@ -43,6 +43,8 @@ CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o: ../src/headers/Exception.hpp
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o: ../src/headers/String.hpp
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o: ../src/sources/Exception.cpp
 
+CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/sources/File.cpp
+
 CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.o: ../src/sources/SortingAlgorithms.cpp
 
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/headers/Array.hpp

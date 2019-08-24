@@ -231,6 +231,33 @@ src/sources/Exception.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.s
 .PHONY : src/sources/Exception.cpp.s
 
+src/sources/File.o: src/sources/File.cpp.o
+
+.PHONY : src/sources/File.o
+
+# target to build an object file
+src/sources/File.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/File.cpp.o
+.PHONY : src/sources/File.cpp.o
+
+src/sources/File.i: src/sources/File.cpp.i
+
+.PHONY : src/sources/File.i
+
+# target to preprocess a source file
+src/sources/File.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/File.cpp.i
+.PHONY : src/sources/File.cpp.i
+
+src/sources/File.s: src/sources/File.cpp.s
+
+.PHONY : src/sources/File.s
+
+# target to generate assembly for a file
+src/sources/File.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/File.cpp.s
+.PHONY : src/sources/File.cpp.s
+
 src/sources/SortingAlgorithms.o: src/sources/SortingAlgorithms.cpp.o
 
 .PHONY : src/sources/SortingAlgorithms.o
@@ -603,6 +630,9 @@ help:
 	@echo "... src/sources/Exception.o"
 	@echo "... src/sources/Exception.i"
 	@echo "... src/sources/Exception.s"
+	@echo "... src/sources/File.o"
+	@echo "... src/sources/File.i"
+	@echo "... src/sources/File.s"
 	@echo "... src/sources/SortingAlgorithms.o"
 	@echo "... src/sources/SortingAlgorithms.i"
 	@echo "... src/sources/SortingAlgorithms.s"

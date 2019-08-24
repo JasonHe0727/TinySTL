@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o"
   "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o"
   "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o"
+  "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/File.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/File.cpp.o"
   "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/SortingAlgorithms.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.o"
   "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/String.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/String.cpp.o"
   "/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringAlgorithms.cpp" "/home/heyanjie/Documents/MyCode/C++/TinySTL/build/CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o"

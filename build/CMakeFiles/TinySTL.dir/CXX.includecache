@@ -135,6 +135,8 @@ Option.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Option.hpp
 Trie.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Trie.hpp
+direct.h
+/home/heyanjie/Documents/MyCode/C++/TinySTL/direct.h
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 Console.hpp
@@ -155,6 +157,8 @@ Exception.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.cpp
 Exception.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.hpp
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/File.cpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/SortingAlgorithms.cpp
 
