@@ -51,13 +51,42 @@ public:
 		}
 	}
 
+//	void Add(const T& item) {
+//		Ensure();
+//		items[count] = item;
+//		count++;
+//	}
+
 	void Add(const T& item) {
-		Ensure();
+		if(count == capacity) {
+			if(capacity == 0) {
+				items = allocator.allocate(4);
+				capacity = 4;
+			} else {
+				if(capacity >= std::numeric_limits<int>::max() / 2) {
+					Resize(std::numeric_limits<int>::max());
+				} else {
+					Resize(capacity * 2);
+				}
+			}
+		}
 		items[count] = item;
 		count++;
 	}
 
+	void Pop() {
+		count--;
+		items[count] = T();
+		if(count > 0 && count == capacity / 4) {
+			Resize(capacity / 2);
+		}
+	}
+
 	inline int Count() const {
+		return count;
+	}
+
+	inline int Size() const {
 		return count;
 	}
 
@@ -88,6 +117,15 @@ private:
 			}
 			items = newItems;
 		}
+	}
+	void Resize(int maxSize) {
+		T* array = allocator.allocate(maxSize);
+		for(int i = 0; i < count; i++) {
+			array[i] = items[i];
+		}
+		allocator.deallocate(items, capacity);
+		items = array;
+		capacity = maxSize;
 	}
 };
 

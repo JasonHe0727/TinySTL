@@ -285,6 +285,33 @@ src/sources/SortingAlgorithms.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.s
 .PHONY : src/sources/SortingAlgorithms.cpp.s
 
+src/sources/StreamReader.o: src/sources/StreamReader.cpp.o
+
+.PHONY : src/sources/StreamReader.o
+
+# target to build an object file
+src/sources/StreamReader.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o
+.PHONY : src/sources/StreamReader.cpp.o
+
+src/sources/StreamReader.i: src/sources/StreamReader.cpp.i
+
+.PHONY : src/sources/StreamReader.i
+
+# target to preprocess a source file
+src/sources/StreamReader.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.i
+.PHONY : src/sources/StreamReader.cpp.i
+
+src/sources/StreamReader.s: src/sources/StreamReader.cpp.s
+
+.PHONY : src/sources/StreamReader.s
+
+# target to generate assembly for a file
+src/sources/StreamReader.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.s
+.PHONY : src/sources/StreamReader.cpp.s
+
 src/sources/String.o: src/sources/String.cpp.o
 
 .PHONY : src/sources/String.o
@@ -636,6 +663,9 @@ help:
 	@echo "... src/sources/SortingAlgorithms.o"
 	@echo "... src/sources/SortingAlgorithms.i"
 	@echo "... src/sources/SortingAlgorithms.s"
+	@echo "... src/sources/StreamReader.o"
+	@echo "... src/sources/StreamReader.i"
+	@echo "... src/sources/StreamReader.s"
 	@echo "... src/sources/String.o"
 	@echo "... src/sources/String.i"
 	@echo "... src/sources/String.s"

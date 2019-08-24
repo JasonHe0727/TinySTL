@@ -2,6 +2,7 @@
 #define STREAM_READER_HPP
 #include <cstdint>
 #include <fstream>
+#include <string>
 #include "String.hpp"
 #include "Option.hpp"
 
@@ -18,7 +19,7 @@ public:
 	Option<Char> Read();
 	Option<String> ReadLine();
 private:
-	void StringToCStr(const String& s, char** result);
+	std::string StringToCStr(const String& s);
 };
 
 #endif // STREAM_READER_HPP

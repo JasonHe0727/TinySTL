@@ -8,6 +8,7 @@ CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/Option.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/Queue.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/SortingAlgorithms.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/Stack.hpp
+CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/StreamReader.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/String.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/StringAlgorithms.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/Trie.hpp
@@ -47,6 +48,16 @@ CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/sources/File.cpp
 
 CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.o: ../src/sources/SortingAlgorithms.cpp
 
+CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o: ../src/headers/Array.hpp
+CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o: ../src/headers/Char.hpp
+CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o: ../src/headers/Encoding.hpp
+CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o: ../src/headers/List.hpp
+CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o: ../src/headers/Option.hpp
+CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o: ../src/headers/StreamReader.hpp
+CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o: ../src/headers/String.hpp
+CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o: ../src/headers/StringBuilder.hpp
+CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o: ../src/sources/StreamReader.cpp
+
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/headers/Array.hpp
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/headers/Char.hpp
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o: ../src/headers/Encoding.hpp
@@ -60,6 +71,10 @@ CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o: ../src/headers/String
 CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o: ../src/headers/StringAlgorithms.hpp
 CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o: ../src/sources/StringAlgorithms.cpp
 
+CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o: ../src/headers/Array.hpp
+CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o: ../src/headers/Char.hpp
+CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o: ../src/headers/List.hpp
+CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o: ../src/headers/String.hpp
 CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o: ../src/headers/StringBuilder.hpp
 CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o: ../src/sources/StringBuilder.cpp
 

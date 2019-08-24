@@ -60,6 +60,18 @@ memory
 limits
 -
 
+../src/headers/StreamReader.hpp
+cstdint
+-
+fstream
+-
+string
+-
+String.hpp
+../src/headers/String.hpp
+Option.hpp
+../src/headers/Option.hpp
+
 ../src/headers/String.hpp
 Array.hpp
 ../src/headers/Array.hpp
@@ -71,6 +83,10 @@ String.hpp
 ../src/headers/String.hpp
 
 ../src/headers/StringBuilder.hpp
+String.hpp
+../src/headers/String.hpp
+List.hpp
+../src/headers/List.hpp
 
 ../src/headers/Trie.hpp
 String.hpp
@@ -135,8 +151,8 @@ Option.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Option.hpp
 Trie.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Trie.hpp
-direct.h
-/home/heyanjie/Documents/MyCode/C++/TinySTL/direct.h
+StreamReader.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/StreamReader.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 Console.hpp
@@ -161,6 +177,16 @@ Exception.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/File.cpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/SortingAlgorithms.cpp
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StreamReader.cpp
+StreamReader.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StreamReader.hpp
+List.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/List.hpp
+StringBuilder.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringBuilder.hpp
+Encoding.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/String.cpp
 String.hpp

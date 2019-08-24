@@ -9,6 +9,7 @@ CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/Queue.hpp
  ../src/headers/SortingAlgorithms.hpp
  ../src/headers/Stack.hpp
+ ../src/headers/StreamReader.hpp
  ../src/headers/String.hpp
  ../src/headers/StringAlgorithms.hpp
  ../src/headers/Trie.hpp
@@ -47,6 +48,16 @@ CMakeFiles/TinySTL.dir/src/sources/File.cpp.o
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/File.cpp
 CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.o
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/SortingAlgorithms.cpp
+CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/Char.hpp
+ ../src/headers/Encoding.hpp
+ ../src/headers/List.hpp
+ ../src/headers/Option.hpp
+ ../src/headers/StreamReader.hpp
+ ../src/headers/String.hpp
+ ../src/headers/StringBuilder.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StreamReader.cpp
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
@@ -61,6 +72,10 @@ CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o
  ../src/headers/StringAlgorithms.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringAlgorithms.cpp
 CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/Char.hpp
+ ../src/headers/List.hpp
+ ../src/headers/String.hpp
  ../src/headers/StringBuilder.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringBuilder.cpp
 CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.o

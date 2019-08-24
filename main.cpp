@@ -14,6 +14,7 @@
 #include "Queue.hpp"
 #include "Option.hpp"
 #include "Trie.hpp"
+#include "StreamReader.hpp"
 
 using std::cout;
 using std::endl;
@@ -47,5 +48,10 @@ int main()
 	loc = bm.Search(text);
 
 	Console::WriteIntLine(loc);
+
+	StreamReader reader("high歌.txt");
+	while(auto line = reader.ReadLine()) {
+		Console::WriteLine(line.Get());
+	}
     return 0;
 }
