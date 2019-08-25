@@ -15,6 +15,7 @@
 #include "Option.hpp"
 #include "Trie.hpp"
 #include "StreamReader.hpp"
+#include "StreamWriter.hpp"
 
 using std::cout;
 using std::endl;
@@ -53,5 +54,11 @@ int main()
 	while(auto line = reader.ReadLine()) {
 		Console::WriteLine(line.Get());
 	}
+
+	StreamWriter writer("关雎（节选）.txt");
+
+	writer.WriteLine("求之不得，寤寐思服。");
+	writer.WriteLine("悠哉悠哉，辗转反侧。");
+	
     return 0;
 }

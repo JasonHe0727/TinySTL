@@ -61,8 +61,6 @@ limits
 -
 
 ../src/headers/StreamReader.hpp
-cstdint
--
 fstream
 -
 string
@@ -71,6 +69,12 @@ String.hpp
 ../src/headers/String.hpp
 Option.hpp
 ../src/headers/Option.hpp
+
+../src/headers/StreamWriter.hpp
+fstream
+-
+String.hpp
+../src/headers/String.hpp
 
 ../src/headers/String.hpp
 Array.hpp
@@ -153,6 +157,8 @@ Trie.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Trie.hpp
 StreamReader.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/StreamReader.hpp
+StreamWriter.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/StreamWriter.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 Console.hpp
@@ -185,6 +191,12 @@ List.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/List.hpp
 StringBuilder.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringBuilder.hpp
+Encoding.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.hpp
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StreamWriter.cpp
+StreamWriter.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StreamWriter.hpp
 Encoding.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.hpp
 

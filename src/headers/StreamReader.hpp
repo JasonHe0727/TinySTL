@@ -1,6 +1,5 @@
 #ifndef STREAM_READER_HPP
 #define STREAM_READER_HPP
-#include <cstdint>
 #include <fstream>
 #include <string>
 #include "String.hpp"

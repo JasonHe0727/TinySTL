@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TinySTL.dir/src/sources/File.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o"
+  "CMakeFiles/TinySTL.dir/src/sources/StreamWriter.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/String.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o"

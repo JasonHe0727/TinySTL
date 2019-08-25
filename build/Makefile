@@ -312,6 +312,33 @@ src/sources/StreamReader.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.s
 .PHONY : src/sources/StreamReader.cpp.s
 
+src/sources/StreamWriter.o: src/sources/StreamWriter.cpp.o
+
+.PHONY : src/sources/StreamWriter.o
+
+# target to build an object file
+src/sources/StreamWriter.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StreamWriter.cpp.o
+.PHONY : src/sources/StreamWriter.cpp.o
+
+src/sources/StreamWriter.i: src/sources/StreamWriter.cpp.i
+
+.PHONY : src/sources/StreamWriter.i
+
+# target to preprocess a source file
+src/sources/StreamWriter.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StreamWriter.cpp.i
+.PHONY : src/sources/StreamWriter.cpp.i
+
+src/sources/StreamWriter.s: src/sources/StreamWriter.cpp.s
+
+.PHONY : src/sources/StreamWriter.s
+
+# target to generate assembly for a file
+src/sources/StreamWriter.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/StreamWriter.cpp.s
+.PHONY : src/sources/StreamWriter.cpp.s
+
 src/sources/String.o: src/sources/String.cpp.o
 
 .PHONY : src/sources/String.o
@@ -666,6 +693,9 @@ help:
 	@echo "... src/sources/StreamReader.o"
 	@echo "... src/sources/StreamReader.i"
 	@echo "... src/sources/StreamReader.s"
+	@echo "... src/sources/StreamWriter.o"
+	@echo "... src/sources/StreamWriter.i"
+	@echo "... src/sources/StreamWriter.s"
 	@echo "... src/sources/String.o"
 	@echo "... src/sources/String.i"
 	@echo "... src/sources/String.s"

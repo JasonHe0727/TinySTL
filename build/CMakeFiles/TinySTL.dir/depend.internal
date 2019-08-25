@@ -10,6 +10,7 @@ CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/SortingAlgorithms.hpp
  ../src/headers/Stack.hpp
  ../src/headers/StreamReader.hpp
+ ../src/headers/StreamWriter.hpp
  ../src/headers/String.hpp
  ../src/headers/StringAlgorithms.hpp
  ../src/headers/Trie.hpp
@@ -58,6 +59,13 @@ CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o
  ../src/headers/String.hpp
  ../src/headers/StringBuilder.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StreamReader.cpp
+CMakeFiles/TinySTL.dir/src/sources/StreamWriter.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/Char.hpp
+ ../src/headers/Encoding.hpp
+ ../src/headers/StreamWriter.hpp
+ ../src/headers/String.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StreamWriter.cpp
 CMakeFiles/TinySTL.dir/src/sources/String.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
