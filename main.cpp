@@ -50,15 +50,15 @@ int main()
 
 	Console::WriteIntLine(loc);
 
-	StreamReader reader("high歌.txt");
-	while(auto line = reader.ReadLine()) {
-		Console::WriteLine(line.Get());
-	}
+	// StreamReader reader("high歌.txt");
+	// while(auto line = reader.ReadLine()) {
+	// 	Console::WriteLine(line.Get());
+	// }
 
-	StreamWriter writer("关雎（节选）.txt");
+	// StreamWriter writer("关雎（节选）.txt");
 
-	writer.WriteLine("求之不得，寤寐思服。");
-	writer.WriteLine("悠哉悠哉，辗转反侧。");
+	// writer.WriteLine("求之不得，寤寐思服。");
+	// writer.WriteLine("悠哉悠哉，辗转反侧。");
 	
     return 0;
 }

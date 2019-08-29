@@ -32,6 +32,11 @@ CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/Option.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/headers/String.hpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o: ../src/sources/Console.cpp
 
+CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o: ../src/headers/Array.hpp
+CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o: ../src/headers/Digraph.hpp
+CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o: ../src/headers/List.hpp
+CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o: ../src/sources/Digraph.cpp
+
 CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/Array.hpp
 CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/Char.hpp
 CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/Encoding.hpp
@@ -45,7 +50,24 @@ CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o: ../src/headers/Exception.hpp
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o: ../src/headers/String.hpp
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o: ../src/sources/Exception.cpp
 
+CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/headers/Array.hpp
+CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/headers/Char.hpp
+CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/headers/File.hpp
+CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/headers/List.hpp
+CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/headers/Option.hpp
+CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/headers/StreamReader.hpp
+CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/headers/StreamWriter.hpp
+CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/headers/String.hpp
 CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/sources/File.cpp
+
+CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/Array.hpp
+CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/Char.hpp
+CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/Digraph.hpp
+CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/List.hpp
+CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/NFA.hpp
+CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/Stack.hpp
+CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/String.hpp
+CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/sources/NFA.cpp
 
 CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.o: ../src/sources/SortingAlgorithms.cpp
 

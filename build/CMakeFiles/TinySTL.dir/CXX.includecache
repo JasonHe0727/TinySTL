@@ -22,6 +22,12 @@ String.hpp
 Option.hpp
 ../src/headers/Option.hpp
 
+../src/headers/Digraph.hpp
+List.hpp
+../src/headers/List.hpp
+Array.hpp
+../src/headers/Array.hpp
+
 ../src/headers/Encoding.hpp
 cstdint
 -
@@ -32,6 +38,12 @@ exception
 String.hpp
 ../src/headers/String.hpp
 
+../src/headers/File.hpp
+Array.hpp
+../src/headers/Array.hpp
+String.hpp
+../src/headers/String.hpp
+
 ../src/headers/List.hpp
 memory
 -
@@ -39,6 +51,12 @@ limits
 -
 initializer_list
 -
+
+../src/headers/NFA.hpp
+Digraph.hpp
+../src/headers/Digraph.hpp
+String.hpp
+../src/headers/String.hpp
 
 ../src/headers/Option.hpp
 type_traits
@@ -170,6 +188,10 @@ Exception.hpp
 iostream
 -
 
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Digraph.cpp
+Digraph.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Digraph.hpp
+
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.cpp
 Encoding.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.hpp
@@ -181,6 +203,20 @@ Exception.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/File.cpp
+File.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/File.hpp
+StreamReader.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StreamReader.hpp
+StreamWriter.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StreamWriter.hpp
+List.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/List.hpp
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/NFA.cpp
+NFA.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/NFA.hpp
+Stack.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Stack.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/SortingAlgorithms.cpp
 

@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TinySTL.dir/main.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o"
+  "CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/File.cpp.o"
+  "CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/SortingAlgorithms.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/StreamWriter.cpp.o"

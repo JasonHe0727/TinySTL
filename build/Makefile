@@ -177,6 +177,33 @@ src/sources/Console.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Console.cpp.s
 .PHONY : src/sources/Console.cpp.s
 
+src/sources/Digraph.o: src/sources/Digraph.cpp.o
+
+.PHONY : src/sources/Digraph.o
+
+# target to build an object file
+src/sources/Digraph.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o
+.PHONY : src/sources/Digraph.cpp.o
+
+src/sources/Digraph.i: src/sources/Digraph.cpp.i
+
+.PHONY : src/sources/Digraph.i
+
+# target to preprocess a source file
+src/sources/Digraph.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.i
+.PHONY : src/sources/Digraph.cpp.i
+
+src/sources/Digraph.s: src/sources/Digraph.cpp.s
+
+.PHONY : src/sources/Digraph.s
+
+# target to generate assembly for a file
+src/sources/Digraph.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.s
+.PHONY : src/sources/Digraph.cpp.s
+
 src/sources/Encoding.o: src/sources/Encoding.cpp.o
 
 .PHONY : src/sources/Encoding.o
@@ -257,6 +284,33 @@ src/sources/File.s: src/sources/File.cpp.s
 src/sources/File.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/File.cpp.s
 .PHONY : src/sources/File.cpp.s
+
+src/sources/NFA.o: src/sources/NFA.cpp.o
+
+.PHONY : src/sources/NFA.o
+
+# target to build an object file
+src/sources/NFA.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o
+.PHONY : src/sources/NFA.cpp.o
+
+src/sources/NFA.i: src/sources/NFA.cpp.i
+
+.PHONY : src/sources/NFA.i
+
+# target to preprocess a source file
+src/sources/NFA.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.i
+.PHONY : src/sources/NFA.cpp.i
+
+src/sources/NFA.s: src/sources/NFA.cpp.s
+
+.PHONY : src/sources/NFA.s
+
+# target to generate assembly for a file
+src/sources/NFA.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.s
+.PHONY : src/sources/NFA.cpp.s
 
 src/sources/SortingAlgorithms.o: src/sources/SortingAlgorithms.cpp.o
 
@@ -678,6 +732,9 @@ help:
 	@echo "... src/sources/Console.o"
 	@echo "... src/sources/Console.i"
 	@echo "... src/sources/Console.s"
+	@echo "... src/sources/Digraph.o"
+	@echo "... src/sources/Digraph.i"
+	@echo "... src/sources/Digraph.s"
 	@echo "... src/sources/Encoding.o"
 	@echo "... src/sources/Encoding.i"
 	@echo "... src/sources/Encoding.s"
@@ -687,6 +744,9 @@ help:
 	@echo "... src/sources/File.o"
 	@echo "... src/sources/File.i"
 	@echo "... src/sources/File.s"
+	@echo "... src/sources/NFA.o"
+	@echo "... src/sources/NFA.i"
+	@echo "... src/sources/NFA.s"
 	@echo "... src/sources/SortingAlgorithms.o"
 	@echo "... src/sources/SortingAlgorithms.i"
 	@echo "... src/sources/SortingAlgorithms.s"

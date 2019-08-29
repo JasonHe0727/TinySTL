@@ -14,18 +14,8 @@ private:
 		Array<Node*> next;
 
 		Node() = default;
-		Node(int radix): value {}, next(radix) {
-			for(int i = 0; i < next.Length(); i++) {
-				next[i] = nullptr;
-			}
-		}
-		~Node() {
-			for(int i = 0; i < next.Length(); i++) {
-				if(next[i] != nullptr) {
-					delete next[i];
-				}
-			}
-		}
+		Node(int radix);
+		~Node();
 	};
 	Node* root;
 	int radix;
@@ -178,5 +168,21 @@ private:
 		return nullptr;
 	}
 };
+
+template <typename TValue>
+Trie<TValue>::Node::Node(int radix): value {}, next(radix) {
+	for(int i = 0; i < next.Length(); i++) {
+		next[i] = nullptr;
+	}
+}
+
+template <typename TValue>
+Trie<TValue>::Node::~Node() {
+	for(int i = 0; i < next.Length(); i++) {
+		if(next[i] != nullptr) {
+			delete next[i];
+		}
+	}
+}
 
 #endif // TRIE_HPP
