@@ -4,7 +4,7 @@
 #include <exception>
 #include "String.hpp"
 
-class Exception {
+class Exception : std::exception {
 public:
 	String message;
 
@@ -12,4 +12,9 @@ public:
 	Exception(const String& message);
 };
 
+class KeyNotFoundException : Exception {
+};
+
+class DuplicateKeyException : Exception {
+};
 #endif // EXCEPTION_HPP

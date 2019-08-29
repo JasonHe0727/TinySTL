@@ -5,6 +5,8 @@ CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/Console.hpp
+ ../src/headers/Dictionary.hpp
+ ../src/headers/Exception.hpp
  ../src/headers/Option.hpp
  ../src/headers/Queue.hpp
  ../src/headers/SortingAlgorithms.hpp

@@ -16,6 +16,7 @@
 #include "Trie.hpp"
 #include "StreamReader.hpp"
 #include "StreamWriter.hpp"
+#include "Dictionary.hpp"
 
 using std::cout;
 using std::endl;
@@ -60,5 +61,18 @@ int main()
 	// writer.WriteLine("求之不得，寤寐思服。");
 	// writer.WriteLine("悠哉悠哉，辗转反侧。");
 	
+	Dictionary<int, String> map;
+	map.Add(100, "A1");
+	map.Add(200, "A2");
+	map.Add(300, "A3");
+	map.Add(400, "A4");
+	map.Add(500, "A5");
+
+	
+	Console::Write("map.Size() = ");
+	Console::WriteIntLine(map.Size());
+	Console::WriteLine(map[200]);
+	Console::WriteLine(map[500]);
+
     return 0;
 }

@@ -22,6 +22,14 @@ String.hpp
 Option.hpp
 ../src/headers/Option.hpp
 
+../src/headers/Dictionary.hpp
+Option.hpp
+../src/headers/Option.hpp
+Exception.hpp
+../src/headers/Exception.hpp
+iostream
+-
+
 ../src/headers/Digraph.hpp
 List.hpp
 ../src/headers/List.hpp
@@ -177,6 +185,8 @@ StreamReader.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/StreamReader.hpp
 StreamWriter.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/StreamWriter.hpp
+Dictionary.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Dictionary.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 Console.hpp
