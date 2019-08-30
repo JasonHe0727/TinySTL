@@ -46,12 +46,12 @@ int main()
 	KMP kmp{pattern, 256};
 	int loc = kmp.Search(text);
 
-	Console::WriteIntLine(loc);
+	Console::WriteLine(loc);
 
 	BoyerMoore bm{pattern, 256};
 	loc = bm.Search(text);
 
-	Console::WriteIntLine(loc);
+	Console::WriteLine(loc);
 
 	// StreamReader reader("high歌.txt");
 	// while(auto line = reader.ReadLine()) {

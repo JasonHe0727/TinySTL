@@ -15,9 +15,9 @@ public:
 
     static void WriteLine(const Char& character);
 
-	static void WriteInt(const int& i);
+	static void Write(const int& i);
 
-	static void WriteIntLine(const int& i);
+	static void WriteLine(const int& i);
 
     static void WriteLine();
 

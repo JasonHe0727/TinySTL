@@ -57,7 +57,7 @@ public:
 		if(x->value.HasValue()) {
 			queue.Enqueue(prefix);
 		}
-		for(Char c = 0; c.ToInt() < radix; c = c + 1) {
+		for(Char c = 0; c.ToInt() < radix; c = Char(c.ToInt() + 1)) {
 			Collect(x->next[c], prefix + c, queue);
 		}
 	}
@@ -76,7 +76,7 @@ public:
 			return;
 		}
 		Char next = pattern[width];
-		for(Char c = 0; c.ToInt() < radix; c = c + 1) {
+		for(Char c = 0; c.ToInt() < radix; c = Char(c.ToInt() + 1)) {
 			if(next == Char('.') || next == c) {
 				Collect(x->next[c], prefix + c, pattern, queue);
 			}
@@ -119,7 +119,7 @@ private:
 			return x;
 		} else {
 			Char c = key[width];
-			return Get(x->next[c], key, width + 1);
+			return Get(x->next[c.ToInt()], key, width + 1);
 		}
 	}
 	Node* Put(Node* x, const String& key, const TValue& val, int width) {
@@ -131,7 +131,7 @@ private:
 			return x;
 		} else {
 			Char c = key[width];
-			x->next[c] = Put(x->next[c], key, val, width + 1);
+			x->next[c.ToInt()] = Put(x->next[c.ToInt()], key, val, width + 1);
 			return x;
 		}
 	}
@@ -146,7 +146,7 @@ private:
 			return length;
 		}
 		Char c = s[width];
-		return Search(x->next[c], s, width + 1, length);
+		return Search(x->next[c.ToInt()], s, width + 1, length);
 	}
 	Node* Delete(Node* x, const String& key, int width) {
 		if(x == nullptr) {
@@ -155,13 +155,13 @@ private:
 			x->value = Option<TValue>();
 		} else {
 			Char c = key[width];
-			x->next[c] = Delete(x->next[c], key, width + 1);
+			x->next[c] = Delete(x->next[c.ToInt()], key, width + 1);
 		}
 		if(x->value != nullptr) {
 			return x;
 		}
-		for(Char c{0}; c.ToInt() < radix; c = c + 1) {
-			if(x->next[c] != nullptr) {
+		for(Char c{0}; c.ToInt() < radix; c = Char(c.ToInt() + 1)) {
+			if(x->next[c.ToInt()] != nullptr) {
 				return x;
 			}
 		}

@@ -12,7 +12,7 @@ void LSD::Sort(Array<String>& array, int width, int radix) {
 		}
 
 		for(int i = 0; i < N; i++) {
-			count[array[i][d] + 1]++;
+			count[array[i][d].ToInt() + 1]++;
 		}
 
 		for(int r = 0; r < radix; r++) {
@@ -20,8 +20,8 @@ void LSD::Sort(Array<String>& array, int width, int radix) {
 		}
 
 		for(int i = 0; i < N; i++) {
-			aux[count[array[i][d]]] = array[i];
-			count[array[i][d]]++;
+			aux[count[array[i][d].ToInt()]] = array[i];
+			count[array[i][d].ToInt()]++;
 		}
 
 		for(int i = 0; i < N; i++) {
@@ -38,7 +38,7 @@ void MSD::Sort(Array<String>& array, int radix) {
 
 int MSD::CharAt(const String& s, int width) {
 	if(width < s.Size()) {
-		return s[width];
+		return s[width].ToInt();
 	} else {
 		return (-1);
 	}
@@ -97,13 +97,13 @@ KMP::KMP(const String& pattern, int radix): pattern{pattern}, dfa(radix) {
 			dfa[i][j] = 0;
 		}
 	}
-	dfa[pattern[0]][0] = 1;
+	dfa[pattern[0].ToInt()][0] = 1;
 	for(int X = 0, j = 1; j < M; j++) {
 		for(int c = 0; c < radix; c++) {
 			dfa[c][j] = dfa[c][X];
 		}
-		dfa[pattern[j]][j] = j + 1;
-		X = dfa[pattern[j]][X];
+		dfa[pattern[j].ToInt()][j] = j + 1;
+		X = dfa[pattern[j].ToInt()][X];
 	}
 }
 
@@ -113,7 +113,7 @@ int KMP::Search(const String& text) const {
 	int N = text.Length();
 	int M = pattern.Length();
 	for(; i < N and j < M; i++) {
-		j = dfa[text[i]][j];
+		j = dfa[text[i].ToInt()][j];
 	}
 	if(j == M) {
 		return i - M;
@@ -132,7 +132,7 @@ BoyerMoore::BoyerMoore(const String& pattern, int radix)
 		right[c] = -1;
 	}
 	for(int j = 0; j < M; j++) {
-		right[pattern[j]] = j;
+		right[pattern[j].ToInt()] = j;
 	}
 }
 
@@ -144,7 +144,7 @@ int BoyerMoore::Search(const String& text) const {
 		skip = 0;
 		for (int j = M - 1; j >= 0; j--) {
 			if(pattern[j] != text[i + j]) {
-				skip = j - right[text[i + j]];
+				skip = j - right[text[i + j].ToInt()];
 				if(skip < 1) {
 					skip = 1;
 				}

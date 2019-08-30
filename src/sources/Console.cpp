@@ -38,11 +38,11 @@ void Console::WriteLine(const Char &character)
     std::cout << std::endl;
 }
 
-void Console::WriteInt(const int& i) {
+void Console::Write(const int& i) {
 	std::cout << i;
 }
 
-void Console::WriteIntLine(const int& i) {
+void Console::WriteLine(const int& i) {
 	std::cout << i << std::endl;
 }
 

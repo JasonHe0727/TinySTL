@@ -10,7 +10,7 @@ public:
 	Char(): value{0} {
 	}
 
-	Char(uint16_t value): value{value} {
+	explicit Char(uint16_t value): value{value} {
 	}
 
 	friend inline bool operator==(const Char& left, const Char& right) {
@@ -37,11 +37,15 @@ public:
 		return left.value <= right.value;
 	}
 
-	inline operator int() {
-		return value;
+	friend inline Char operator+(const Char& left, const int& right) {
+		return Char(left.value + right);
 	}
 
-	int ToInt() const {
+	friend inline Char operator-(const Char& left, const int& right) {
+		return Char(left.value - right);
+	}
+
+	inline int ToInt() const {
 		return value;
 	}
 };

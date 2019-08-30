@@ -24,7 +24,7 @@ String::String(const char *utf8Str)
 		uint16_t* utf16Str = new uint16_t[length];
         Encoding::Utf8ToUtf16(utf8Str, utf16Str);
 		for(int i = 0; i < length; i++) {
-			characters[i] = utf16Str[i];
+			characters[i] = Char(utf16Str[i]);
 		}
 		delete[] utf16Str;
         refCount = new int(1);
@@ -109,7 +109,7 @@ int String::GetHashCode() const
         int hashCode = 0;
         for (int i = 0; i < length; i++)
         {
-            hashCode = hashCode * 31 + characters[i];
+            hashCode = hashCode * 31 + characters[i].ToInt();
         }
         return cachedHashCode = hashCode;
     }
