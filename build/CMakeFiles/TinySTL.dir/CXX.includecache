@@ -27,8 +27,8 @@ Option.hpp
 ../src/headers/Option.hpp
 Exception.hpp
 ../src/headers/Exception.hpp
-iostream
--
+Hash.hpp
+../src/headers/Hash.hpp
 
 ../src/headers/Digraph.hpp
 List.hpp
@@ -51,6 +51,8 @@ Array.hpp
 ../src/headers/Array.hpp
 String.hpp
 ../src/headers/String.hpp
+
+../src/headers/Hash.hpp
 
 ../src/headers/List.hpp
 memory
@@ -107,6 +109,8 @@ Array.hpp
 ../src/headers/Array.hpp
 Char.hpp
 ../src/headers/Char.hpp
+Hash.hpp
+../src/headers/Hash.hpp
 
 ../src/headers/StringAlgorithms.hpp
 String.hpp
@@ -131,6 +135,8 @@ Option.hpp
 ../test/headers/Assert.hpp
 iostream
 -
+
+../test/headers/Test_Dictionary.hpp
 
 ../test/headers/Test_List.hpp
 
@@ -167,6 +173,8 @@ Test_Option.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Option.hpp
 Test_Trie.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Trie.hpp
+Test_Dictionary.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/Test_Dictionary.hpp
 Console.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Console.hpp
 SortingAlgorithms.hpp
@@ -267,6 +275,14 @@ StringBuilder.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringBuilder.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.cpp
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Dictionary.cpp
+Test_Dictionary.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Dictionary.hpp
+Assert.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.hpp
+Dictionary.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Dictionary.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_List.cpp
 Test_List.hpp

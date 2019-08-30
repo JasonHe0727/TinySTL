@@ -3,6 +3,7 @@
 
 #include "Array.hpp"
 #include "Char.hpp"
+#include "Hash.hpp"
 
 class String
 {
@@ -66,6 +67,7 @@ public:
 
     static String Empty;
 
+	friend struct Hash<String>;
 private:
     void Copy(const String &other);
 };
@@ -85,4 +87,22 @@ inline int String::Size() const
 {
     return length;
 }
+
+template <>
+struct Hash<String> {
+	int operator()(const String& input) const {
+		if (input.cachedHashCode == 0) {
+			int hashCode = 0;
+			int length = input.Length();
+			for (int i = 0; i < length; i++) {
+				hashCode = 31 * hashCode + input.characters[i].ToInt();
+			}
+			input.cachedHashCode = hashCode;
+			return hashCode;
+		} else {
+			return input.cachedHashCode;
+		}
+	}
+};
+
 #endif //STRING_HPP

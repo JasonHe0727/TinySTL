@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.o"
+  "CMakeFiles/TinySTL.dir/test/sources/Test_Dictionary.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Test_Option.cpp.o"
   "CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o"

@@ -2,25 +2,7 @@
 #define DICTIONARY_HPP
 #include "Option.hpp"
 #include "Exception.hpp"
-#include <iostream>
-using std::cout;
-using std::endl;
-
-template <typename T>
-struct Hash {
-	int operator()(const T& input) const;
-};
-
-template <>
-struct Hash<int> {
-	int operator()(const int& input) const {
-		if(input >= 0) {
-			return input;
-		} else {
-			return -input;
-		}
-	}
-};
+#include "Hash.hpp"
 
 template <typename TKey, typename TValue>
 class KeyValuePair {
@@ -57,7 +39,6 @@ public:
 	}
 
 	void Add(const TKey& key, const TValue& value) {
-		cout << "add 1" << endl;
 		if(count >= capacity) {
 			if(capacity == 0) {
 				Resize(4);
@@ -65,20 +46,12 @@ public:
 				Resize(capacity * 2);
 			}
 		}
-		cout << "add 2" << endl;
-		cout << "try to compute hash code" << endl;
-		cout << "key = " << endl;
-		int keyInt = key;
-		cout << keyInt << endl;
 		int hashCode = hash(key);
-		cout << "hash code = " << hashCode << endl;
 		for(int i = 0; i < capacity; i++) {
 			int index = (hashCode + i) % capacity;
-			cout << "index = " << index << ", capacity = " << capacity << endl;
 			if(items[index] == nullptr) {
 				items[index] = new KeyValuePair<TKey, TValue>(key, value);
 				count++;
-				cout << "add 3" << endl;
 				return;
 			} else if(items[index]->Key() == key) {
 				throw DuplicateKeyException();

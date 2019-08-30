@@ -7,6 +7,7 @@ CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/Console.hpp
  ../src/headers/Dictionary.hpp
  ../src/headers/Exception.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/Option.hpp
  ../src/headers/Queue.hpp
  ../src/headers/SortingAlgorithms.hpp
@@ -16,6 +17,7 @@ CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/String.hpp
  ../src/headers/StringAlgorithms.hpp
  ../src/headers/Trie.hpp
+ ../test/headers/Test_Dictionary.hpp
  ../test/headers/Test_List.hpp
  ../test/headers/Test_Option.hpp
  ../test/headers/Test_Queue.hpp
@@ -31,6 +33,7 @@ CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o
  ../src/headers/Console.hpp
  ../src/headers/Encoding.hpp
  ../src/headers/Exception.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/Option.hpp
  ../src/headers/String.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
@@ -44,18 +47,21 @@ CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o
  ../src/headers/Char.hpp
  ../src/headers/Encoding.hpp
  ../src/headers/Exception.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/String.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.cpp
 CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/Exception.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/String.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Exception.cpp
 CMakeFiles/TinySTL.dir/src/sources/File.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/File.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/List.hpp
  ../src/headers/Option.hpp
  ../src/headers/StreamReader.hpp
@@ -66,6 +72,7 @@ CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/Digraph.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/List.hpp
  ../src/headers/NFA.hpp
  ../src/headers/Stack.hpp
@@ -77,6 +84,7 @@ CMakeFiles/TinySTL.dir/src/sources/StreamReader.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/Encoding.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/List.hpp
  ../src/headers/Option.hpp
  ../src/headers/StreamReader.hpp
@@ -87,6 +95,7 @@ CMakeFiles/TinySTL.dir/src/sources/StreamWriter.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/Encoding.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/StreamWriter.hpp
  ../src/headers/String.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StreamWriter.cpp
@@ -95,26 +104,41 @@ CMakeFiles/TinySTL.dir/src/sources/String.cpp.o
  ../src/headers/Char.hpp
  ../src/headers/Encoding.hpp
  ../src/headers/Exception.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/String.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/String.cpp
 CMakeFiles/TinySTL.dir/src/sources/StringAlgorithms.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/String.hpp
  ../src/headers/StringAlgorithms.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringAlgorithms.cpp
 CMakeFiles/TinySTL.dir/src/sources/StringBuilder.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/List.hpp
  ../src/headers/String.hpp
  ../src/headers/StringBuilder.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/StringBuilder.cpp
 CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.o
  /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Assert.cpp
+CMakeFiles/TinySTL.dir/test/sources/Test_Dictionary.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/Char.hpp
+ ../src/headers/Dictionary.hpp
+ ../src/headers/Exception.hpp
+ ../src/headers/Hash.hpp
+ ../src/headers/Option.hpp
+ ../src/headers/String.hpp
+ ../test/headers/Assert.hpp
+ ../test/headers/Test_Dictionary.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/test/sources/Test_Dictionary.cpp
 CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/List.hpp
  ../src/headers/String.hpp
  ../test/headers/Assert.hpp
@@ -123,6 +147,7 @@ CMakeFiles/TinySTL.dir/test/sources/Test_List.cpp.o
 CMakeFiles/TinySTL.dir/test/sources/Test_Option.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/Option.hpp
  ../src/headers/String.hpp
  ../test/headers/Assert.hpp
@@ -136,6 +161,7 @@ CMakeFiles/TinySTL.dir/test/sources/Test_Queue.cpp.o
 CMakeFiles/TinySTL.dir/test/sources/Test_SortingAlgorithms.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/SortingAlgorithms.hpp
  ../src/headers/String.hpp
  ../test/headers/Assert.hpp
@@ -149,6 +175,7 @@ CMakeFiles/TinySTL.dir/test/sources/Test_Stack.cpp.o
 CMakeFiles/TinySTL.dir/test/sources/Test_String.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/String.hpp
  ../test/headers/Assert.hpp
  ../test/headers/Test_String.hpp
@@ -157,6 +184,7 @@ CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/Console.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/Option.hpp
  ../src/headers/String.hpp
  ../src/headers/StringAlgorithms.hpp
@@ -166,6 +194,7 @@ CMakeFiles/TinySTL.dir/test/sources/Test_StringAlgorithms.cpp.o
 CMakeFiles/TinySTL.dir/test/sources/Test_Trie.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
+ ../src/headers/Hash.hpp
  ../src/headers/Option.hpp
  ../src/headers/Queue.hpp
  ../src/headers/String.hpp

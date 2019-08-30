@@ -501,6 +501,33 @@ test/sources/Assert.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Assert.cpp.s
 .PHONY : test/sources/Assert.cpp.s
 
+test/sources/Test_Dictionary.o: test/sources/Test_Dictionary.cpp.o
+
+.PHONY : test/sources/Test_Dictionary.o
+
+# target to build an object file
+test/sources/Test_Dictionary.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Dictionary.cpp.o
+.PHONY : test/sources/Test_Dictionary.cpp.o
+
+test/sources/Test_Dictionary.i: test/sources/Test_Dictionary.cpp.i
+
+.PHONY : test/sources/Test_Dictionary.i
+
+# target to preprocess a source file
+test/sources/Test_Dictionary.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Dictionary.cpp.i
+.PHONY : test/sources/Test_Dictionary.cpp.i
+
+test/sources/Test_Dictionary.s: test/sources/Test_Dictionary.cpp.s
+
+.PHONY : test/sources/Test_Dictionary.s
+
+# target to generate assembly for a file
+test/sources/Test_Dictionary.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/test/sources/Test_Dictionary.cpp.s
+.PHONY : test/sources/Test_Dictionary.cpp.s
+
 test/sources/Test_List.o: test/sources/Test_List.cpp.o
 
 .PHONY : test/sources/Test_List.o
@@ -768,6 +795,9 @@ help:
 	@echo "... test/sources/Assert.o"
 	@echo "... test/sources/Assert.i"
 	@echo "... test/sources/Assert.s"
+	@echo "... test/sources/Test_Dictionary.o"
+	@echo "... test/sources/Test_Dictionary.i"
+	@echo "... test/sources/Test_Dictionary.s"
 	@echo "... test/sources/Test_List.o"
 	@echo "... test/sources/Test_List.i"
 	@echo "... test/sources/Test_List.s"
