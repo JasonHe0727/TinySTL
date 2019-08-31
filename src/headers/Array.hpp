@@ -5,6 +5,12 @@
 #include <initializer_list>
 
 template <typename T>
+class Array;
+
+template <typename T>
+class ArrayIterator;
+
+template <typename T>
 class Array {
 private:
 	int length;
@@ -64,6 +70,15 @@ public:
 		}
 	}
 
+	ArrayIterator<T> begin() const {
+		return ArrayIterator<T>(this, 0);
+	}
+
+	ArrayIterator<T> end() const {
+		return ArrayIterator<T>(this, length);
+	}
+
+	friend class ArrayIterator<T>;
 private:
 	void Copy(const Array<T>& other) {
 		length = other.length;
@@ -74,4 +89,26 @@ private:
 	}
 };
 
+template <typename T>
+class ArrayIterator {
+private:
+	const Array<T>* array;
+	int index;
+public:
+	ArrayIterator(const Array<T>* array, int index): array{array}, index{index} {
+	}
+	bool operator!=(ArrayIterator<T>& other) const {
+		return index != other.index;
+	}
+	const T& operator*() const {
+		return array->items[index];
+	}
+	T& operator*() {
+		return array->items[index];
+	}
+	ArrayIterator<T>& operator++() {
+		index++;
+		return *this;
+	}
+};
 #endif // ARRAY_HPP

@@ -5,6 +5,12 @@
 #include "Hash.hpp"
 
 template <typename TKey, typename TValue>
+class DictionaryKeyIterator;
+
+template <typename TKey, typename TValue>
+class DictionaryKeyCollection;
+
+template <typename TKey, typename TValue>
 class KeyValuePair {
 private:
 	TKey key;
@@ -133,6 +139,14 @@ public:
 	inline int Size() const {
 		return count;
 	}
+
+	DictionaryKeyCollection<TKey, TValue> Keys() const {
+		return DictionaryKeyCollection<TKey, TValue>(this);
+	}
+
+	friend class DictionaryKeyIterator<TKey, TValue>;
+	friend class DictionaryKeyCollection<TKey, TValue>;
+
 private:
 	void Resize(int newCapacity) {
 		KeyValuePair<TKey, TValue>** newArray = new KeyValuePair<TKey, TValue>*[newCapacity];
@@ -152,6 +166,47 @@ private:
 			}
 		}
 		delete[] oldArray;
+	}
+};
+
+template <typename TKey, typename TValue>
+class DictionaryKeyCollection {
+private:
+	const Dictionary<TKey, TValue>* dictionary;
+public:
+	DictionaryKeyCollection(const Dictionary<TKey, TValue>* dictionary): dictionary{dictionary} {
+	}
+
+	DictionaryKeyIterator<TKey, TValue> begin() const {
+		return DictionaryKeyIterator<TKey, TValue>(dictionary, 0);
+	}
+
+	DictionaryKeyIterator<TKey, TValue> end() const {
+		return DictionaryKeyIterator<TKey, TValue>(dictionary, dictionary->capacity);
+	}
+};
+
+template <typename TKey, typename TValue>
+class DictionaryKeyIterator {
+private:
+	const Dictionary<TKey, TValue>* dictionary;
+	int index;
+public:
+	DictionaryKeyIterator(const Dictionary<TKey, TValue>* dictionary, int index)
+		: dictionary{dictionary}, index{index} {
+	}
+	bool operator!=(DictionaryKeyIterator<TKey, TValue>& other) {
+		while(index < dictionary->capacity && dictionary->items[index] == nullptr) {
+			index++;
+		}
+		return index != other.index;
+	}
+	const TKey& operator*() const {
+		return dictionary->items[index]->Key();
+	}
+	DictionaryKeyIterator<TKey, TValue>& operator++() {
+		index++;
+		return *this;
 	}
 };
 

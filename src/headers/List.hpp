@@ -6,6 +6,9 @@
 #include <initializer_list>
 
 template <typename T>
+class ListIterator;
+
+template <typename T>
 class List {
 private:
 	int count; // the count of elements
@@ -51,12 +54,6 @@ public:
 		}
 	}
 
-//	void Add(const T& item) {
-//		Ensure();
-//		items[count] = item;
-//		count++;
-//	}
-
 	void Add(const T& item) {
 		if(count == capacity) {
 			if(capacity == 0) {
@@ -98,26 +95,16 @@ public:
 		return items[index];
 	}
 
-private:
-	void Ensure() {
-		if(count == capacity) {
-			if(capacity == 0) {
-				capacity = 4;
-			} else if(capacity >= std::numeric_limits<int>::max() / 2) {
-				capacity = std::numeric_limits<int>::max();
-			} else {
-				capacity = capacity * 2;
-			}
-			T* newItems = allocator.allocate(capacity);
-			for(int i = 0; i < count; i++) {
-				newItems[i] = items[i];
-			}
-			if(items) {
-				allocator.deallocate(items, count);
-			}
-			items = newItems;
-		}
+	ListIterator<T> begin() const {
+		return ListIterator<T>(this, 0);
 	}
+
+	ListIterator<T> end() const {
+		return ListIterator<T>(this, count);
+	}
+
+	friend class ListIterator<T>;
+private:
 	void Resize(int maxSize) {
 		T* array = allocator.allocate(maxSize);
 		for(int i = 0; i < count; i++) {
@@ -129,5 +116,27 @@ private:
 	}
 };
 
+template <typename T>
+class ListIterator {
+private:
+	const List<T>* list;
+	int index;
+public:
+	ListIterator(const List<T>* list, int index): list{list}, index{index} {
+	}
+	bool operator!=(ListIterator<T>& other) const {
+		return index != other.index;
+	}
+	const T& operator*() const {
+		return list->items[index];
+	}
+	T& operator*() {
+		return list->items[index];
+	}
+	ListIterator<T>& operator++() {
+		index++;
+		return *this;
+	}
+};
 
 #endif // List_HPP

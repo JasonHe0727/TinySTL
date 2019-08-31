@@ -8,6 +8,7 @@ CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/Dictionary.hpp
  ../src/headers/Exception.hpp
  ../src/headers/Hash.hpp
+ ../src/headers/List.hpp
  ../src/headers/Option.hpp
  ../src/headers/Queue.hpp
  ../src/headers/SortingAlgorithms.hpp
