@@ -18,7 +18,6 @@
 #include "StreamReader.hpp"
 #include "StreamWriter.hpp"
 #include "Dictionary.hpp"
-#include "List.hpp"
 
 using std::cout;
 using std::endl;
@@ -65,6 +64,7 @@ int main()
 	// writer.WriteLine("悠哉悠哉，辗转反侧。");
 	
 	Dictionary<String, int> map;
+
 	map.Add("A", 10);
 	map.Add("B", 20);
 	map.Add("C", 30);
