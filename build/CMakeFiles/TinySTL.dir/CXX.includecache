@@ -15,6 +15,8 @@ initializer_list
 ../src/headers/Char.hpp
 cstdint
 -
+Hash.hpp
+../src/headers/Hash.hpp
 
 ../src/headers/Console.hpp
 String.hpp
@@ -36,6 +38,14 @@ List.hpp
 Array.hpp
 ../src/headers/Array.hpp
 
+../src/headers/DirectedDFS.hpp
+Array.hpp
+../src/headers/Array.hpp
+Digraph.hpp
+../src/headers/Digraph.hpp
+List.hpp
+../src/headers/List.hpp
+
 ../src/headers/Encoding.hpp
 cstdint
 -
@@ -53,6 +63,8 @@ String.hpp
 ../src/headers/String.hpp
 
 ../src/headers/Hash.hpp
+cstdint
+-
 
 ../src/headers/List.hpp
 memory
@@ -195,8 +207,6 @@ StreamWriter.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/StreamWriter.hpp
 Dictionary.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Dictionary.hpp
-List.hpp
-/home/heyanjie/Documents/MyCode/C++/TinySTL/List.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 Console.hpp
@@ -211,6 +221,10 @@ iostream
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Digraph.cpp
 Digraph.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Digraph.hpp
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/DirectedDFS.cpp
+DirectedDFS.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/DirectedDFS.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.cpp
 Encoding.hpp
@@ -237,6 +251,10 @@ NFA.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/NFA.hpp
 Stack.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Stack.hpp
+DirectedDFS.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/DirectedDFS.hpp
+List.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/List.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/SortingAlgorithms.cpp
 

@@ -8,7 +8,6 @@ CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/Dictionary.hpp
  ../src/headers/Exception.hpp
  ../src/headers/Hash.hpp
- ../src/headers/List.hpp
  ../src/headers/Option.hpp
  ../src/headers/Queue.hpp
  ../src/headers/SortingAlgorithms.hpp
@@ -43,6 +42,12 @@ CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o
  ../src/headers/Digraph.hpp
  ../src/headers/List.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Digraph.cpp
+CMakeFiles/TinySTL.dir/src/sources/DirectedDFS.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/Digraph.hpp
+ ../src/headers/DirectedDFS.hpp
+ ../src/headers/List.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/DirectedDFS.cpp
 CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
@@ -73,6 +78,7 @@ CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
  ../src/headers/Digraph.hpp
+ ../src/headers/DirectedDFS.hpp
  ../src/headers/Hash.hpp
  ../src/headers/List.hpp
  ../src/headers/NFA.hpp

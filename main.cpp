@@ -63,16 +63,17 @@ int main()
 	// writer.WriteLine("求之不得，寤寐思服。");
 	// writer.WriteLine("悠哉悠哉，辗转反侧。");
 	
-	Dictionary<String, int> map;
+	// Dictionary<String, int> map;
 
-	map.Add("A", 10);
-	map.Add("B", 20);
-	map.Add("C", 30);
-	map.Add("D", 40);
-	map.Add("E", 50);
+	// map.Add("A", 10);
+	// map.Add("B", 20);
+	// map.Add("C", 30);
+	// map.Add("D", 40);
+	// map.Add("E", 50);
 
-	for(const String& key : map.Keys()) {
-		Console::WriteLine(key);
-	}
+	// for(const String& key : map.Keys()) {
+	// 	Console::WriteLine(key);
+	// }
+
     return 0;
 }

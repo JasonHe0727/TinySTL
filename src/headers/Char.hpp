@@ -2,6 +2,7 @@
 #define CHAR_HPP
 
 #include <cstdint>
+#include "Hash.hpp"
 
 class Char {
 private:
@@ -50,4 +51,10 @@ public:
 	}
 };
 
+template <>
+struct Hash<Char> {
+	int operator()(const Char& input) const {
+		return input.ToInt();
+	}
+};
 #endif // CHAR_HPP

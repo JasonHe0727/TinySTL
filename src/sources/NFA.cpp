@@ -1,5 +1,7 @@
 #include "NFA.hpp"
 #include "Stack.hpp"
+#include "DirectedDFS.hpp"
+#include "List.hpp"
 
 NFA::NFA(const String& regexp)
 	: regexp{regexp}, re{regexp.ToCharArray()}
@@ -34,6 +36,34 @@ NFA::NFA(const String& regexp)
 }
 
 bool NFA::Recognizes(const String& text) {
-	// TO DO
+	List<int> pc;
+	DirectedDFS dfs(G, 0);
+	for(int v = 0; v < G.numOfVertices(); v++) {
+		if(dfs.Marked(v)) {
+			pc.Add(v);
+		}
+	}
+	for(int i = 0; i < text.Length(); i++) {
+		List<int> match;
+		for(int v : pc) {
+			if(v < numOfStates) {
+				if(re[v] == text[i] || re[v] == Char('.')) {
+					match.Add(v + 1);
+				}
+			}
+		}
+		pc = List<int>();
+		dfs = DirectedDFS(G, match);
+		for(int v = 0; v < G.numOfVertices(); v++) {
+			if(dfs.Marked(v)) {
+				pc.Add(v);
+			}
+		}
+	}
+	for(int v : pc) {
+		if(v == numOfStates) {
+			return true;
+		}
+	}
 	return false;
 }

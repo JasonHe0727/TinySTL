@@ -204,6 +204,33 @@ src/sources/Digraph.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.s
 .PHONY : src/sources/Digraph.cpp.s
 
+src/sources/DirectedDFS.o: src/sources/DirectedDFS.cpp.o
+
+.PHONY : src/sources/DirectedDFS.o
+
+# target to build an object file
+src/sources/DirectedDFS.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/DirectedDFS.cpp.o
+.PHONY : src/sources/DirectedDFS.cpp.o
+
+src/sources/DirectedDFS.i: src/sources/DirectedDFS.cpp.i
+
+.PHONY : src/sources/DirectedDFS.i
+
+# target to preprocess a source file
+src/sources/DirectedDFS.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/DirectedDFS.cpp.i
+.PHONY : src/sources/DirectedDFS.cpp.i
+
+src/sources/DirectedDFS.s: src/sources/DirectedDFS.cpp.s
+
+.PHONY : src/sources/DirectedDFS.s
+
+# target to generate assembly for a file
+src/sources/DirectedDFS.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/DirectedDFS.cpp.s
+.PHONY : src/sources/DirectedDFS.cpp.s
+
 src/sources/Encoding.o: src/sources/Encoding.cpp.o
 
 .PHONY : src/sources/Encoding.o
@@ -762,6 +789,9 @@ help:
 	@echo "... src/sources/Digraph.o"
 	@echo "... src/sources/Digraph.i"
 	@echo "... src/sources/Digraph.s"
+	@echo "... src/sources/DirectedDFS.o"
+	@echo "... src/sources/DirectedDFS.i"
+	@echo "... src/sources/DirectedDFS.s"
 	@echo "... src/sources/Encoding.o"
 	@echo "... src/sources/Encoding.i"
 	@echo "... src/sources/Encoding.s"

@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TinySTL.dir/main.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o"
+  "CMakeFiles/TinySTL.dir/src/sources/DirectedDFS.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/Exception.cpp.o"
   "CMakeFiles/TinySTL.dir/src/sources/File.cpp.o"

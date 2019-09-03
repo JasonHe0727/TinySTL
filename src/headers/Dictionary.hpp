@@ -44,6 +44,16 @@ public:
 	Dictionary(): count{0}, capacity{0}, items{nullptr} {
 	}
 
+	~Dictionary() {
+		for(int i = 0; i < capacity; i++) {
+			if(items[i] != nullptr) {
+				delete items[i];
+				items[i] = nullptr;
+			}
+		}
+		delete[] items;
+	}
+
 	void Add(const TKey& key, const TValue& value) {
 		if(count >= capacity) {
 			if(capacity == 0) {

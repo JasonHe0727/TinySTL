@@ -7,7 +7,6 @@ CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/Console.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/Dictionary.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/Exception.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/Hash.hpp
-CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/List.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/Option.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/Queue.hpp
 CMakeFiles/TinySTL.dir/main.cpp.o: ../src/headers/SortingAlgorithms.hpp
@@ -43,6 +42,12 @@ CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o: ../src/headers/Digraph.hpp
 CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o: ../src/headers/List.hpp
 CMakeFiles/TinySTL.dir/src/sources/Digraph.cpp.o: ../src/sources/Digraph.cpp
 
+CMakeFiles/TinySTL.dir/src/sources/DirectedDFS.cpp.o: ../src/headers/Array.hpp
+CMakeFiles/TinySTL.dir/src/sources/DirectedDFS.cpp.o: ../src/headers/Digraph.hpp
+CMakeFiles/TinySTL.dir/src/sources/DirectedDFS.cpp.o: ../src/headers/DirectedDFS.hpp
+CMakeFiles/TinySTL.dir/src/sources/DirectedDFS.cpp.o: ../src/headers/List.hpp
+CMakeFiles/TinySTL.dir/src/sources/DirectedDFS.cpp.o: ../src/sources/DirectedDFS.cpp
+
 CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/Array.hpp
 CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/Char.hpp
 CMakeFiles/TinySTL.dir/src/sources/Encoding.cpp.o: ../src/headers/Encoding.hpp
@@ -72,6 +77,7 @@ CMakeFiles/TinySTL.dir/src/sources/File.cpp.o: ../src/sources/File.cpp
 CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/Array.hpp
 CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/Char.hpp
 CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/Digraph.hpp
+CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/DirectedDFS.hpp
 CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/Hash.hpp
 CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/List.hpp
 CMakeFiles/TinySTL.dir/src/sources/NFA.cpp.o: ../src/headers/NFA.hpp
