@@ -12,6 +12,14 @@ memory
 initializer_list
 -
 
+../src/headers/BinaryWriter.hpp
+fstream
+-
+cstdint
+-
+String.hpp
+../src/headers/String.hpp
+
 ../src/headers/Char.hpp
 cstdint
 -
@@ -207,6 +215,14 @@ StreamWriter.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/StreamWriter.hpp
 Dictionary.hpp
 /home/heyanjie/Documents/MyCode/C++/TinySTL/Dictionary.hpp
+BinaryWriter.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/BinaryWriter.hpp
+
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/BinaryWriter.cpp
+BinaryWriter.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/BinaryWriter.hpp
+Encoding.hpp
+/home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Encoding.hpp
 
 /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/Console.cpp
 Console.hpp

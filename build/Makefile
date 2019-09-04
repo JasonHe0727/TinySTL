@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/sources/BinaryWriter.o: src/sources/BinaryWriter.cpp.o
+
+.PHONY : src/sources/BinaryWriter.o
+
+# target to build an object file
+src/sources/BinaryWriter.cpp.o:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/BinaryWriter.cpp.o
+.PHONY : src/sources/BinaryWriter.cpp.o
+
+src/sources/BinaryWriter.i: src/sources/BinaryWriter.cpp.i
+
+.PHONY : src/sources/BinaryWriter.i
+
+# target to preprocess a source file
+src/sources/BinaryWriter.cpp.i:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/BinaryWriter.cpp.i
+.PHONY : src/sources/BinaryWriter.cpp.i
+
+src/sources/BinaryWriter.s: src/sources/BinaryWriter.cpp.s
+
+.PHONY : src/sources/BinaryWriter.s
+
+# target to generate assembly for a file
+src/sources/BinaryWriter.cpp.s:
+	$(MAKE) -f CMakeFiles/TinySTL.dir/build.make CMakeFiles/TinySTL.dir/src/sources/BinaryWriter.cpp.s
+.PHONY : src/sources/BinaryWriter.cpp.s
+
 src/sources/Console.o: src/sources/Console.cpp.o
 
 .PHONY : src/sources/Console.o
@@ -783,6 +810,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/sources/BinaryWriter.o"
+	@echo "... src/sources/BinaryWriter.i"
+	@echo "... src/sources/BinaryWriter.s"
 	@echo "... src/sources/Console.o"
 	@echo "... src/sources/Console.i"
 	@echo "... src/sources/Console.s"

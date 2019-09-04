@@ -18,6 +18,7 @@
 #include "StreamReader.hpp"
 #include "StreamWriter.hpp"
 #include "Dictionary.hpp"
+#include "BinaryWriter.hpp"
 
 using std::cout;
 using std::endl;
@@ -77,5 +78,6 @@ int main()
 		Console::WriteLine(pair.Value());
 	}
 
+	BinaryWriter writer;
     return 0;
 }

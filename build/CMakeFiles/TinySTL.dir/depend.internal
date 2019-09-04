@@ -3,6 +3,7 @@
 
 CMakeFiles/TinySTL.dir/main.cpp.o
  ../src/headers/Array.hpp
+ ../src/headers/BinaryWriter.hpp
  ../src/headers/Char.hpp
  ../src/headers/Console.hpp
  ../src/headers/Dictionary.hpp
@@ -27,6 +28,14 @@ CMakeFiles/TinySTL.dir/main.cpp.o
  ../test/headers/Test_StringAlgorithms.hpp
  ../test/headers/Test_Trie.hpp
  /home/heyanjie/Documents/MyCode/C++/TinySTL/main.cpp
+CMakeFiles/TinySTL.dir/src/sources/BinaryWriter.cpp.o
+ ../src/headers/Array.hpp
+ ../src/headers/BinaryWriter.hpp
+ ../src/headers/Char.hpp
+ ../src/headers/Encoding.hpp
+ ../src/headers/Hash.hpp
+ ../src/headers/String.hpp
+ /home/heyanjie/Documents/MyCode/C++/TinySTL/src/sources/BinaryWriter.cpp
 CMakeFiles/TinySTL.dir/src/sources/Console.cpp.o
  ../src/headers/Array.hpp
  ../src/headers/Char.hpp
