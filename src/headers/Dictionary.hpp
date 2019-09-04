@@ -11,6 +11,15 @@ template <typename TKey, typename TValue>
 class DictionaryKeyCollection;
 
 template <typename TKey, typename TValue>
+class DictionaryValueIterator;
+
+template <typename TKey, typename TValue>
+class DictionaryValueCollection;
+
+template <typename TKey, typename TValue>
+class KeyValuePairIterator;
+
+template <typename TKey, typename TValue>
 class KeyValuePair {
 private:
 	TKey key;
@@ -154,8 +163,25 @@ public:
 		return DictionaryKeyCollection<TKey, TValue>(this);
 	}
 
+	DictionaryValueCollection<TKey, TValue> Values() const {
+		return DictionaryValueCollection<TKey, TValue>(this);
+	}
+
+	KeyValuePairIterator<TKey, TValue> begin() const {
+		return KeyValuePairIterator<TKey, TValue>(this, 0);
+	}
+
+	KeyValuePairIterator<TKey, TValue> end() const {
+		return KeyValuePairIterator<TKey, TValue>(this, this->capacity);
+	}
+
 	friend class DictionaryKeyIterator<TKey, TValue>;
 	friend class DictionaryKeyCollection<TKey, TValue>;
+
+	friend class DictionaryValueIterator<TKey, TValue>;
+	friend class DictionaryValueCollection<TKey, TValue>;
+
+	friend class KeyValuePairIterator<TKey, TValue>;
 
 private:
 	void Resize(int newCapacity) {
@@ -220,4 +246,68 @@ public:
 	}
 };
 
+template <typename TKey, typename TValue>
+class DictionaryValueCollection {
+private:
+	const Dictionary<TKey, TValue>* dictionary;
+public:
+	DictionaryValueCollection(const Dictionary<TKey, TValue>* dictionary): dictionary{dictionary} {
+	}
+
+	DictionaryValueIterator<TKey, TValue> begin() const {
+		return DictionaryValueIterator<TKey, TValue>(dictionary, 0);
+	}
+
+	DictionaryValueIterator<TKey, TValue> end() const {
+		return DictionaryValueIterator<TKey, TValue>(dictionary, dictionary->capacity);
+	}
+};
+
+template <typename TKey, typename TValue>
+class DictionaryValueIterator {
+private:
+	const Dictionary<TKey, TValue>* dictionary;
+	int index;
+public:
+	DictionaryValueIterator(const Dictionary<TKey, TValue>* dictionary, int index)
+		: dictionary{dictionary}, index{index} {
+	}
+	bool operator!=(DictionaryValueIterator<TKey, TValue>& other) {
+		while(index < dictionary->capacity && dictionary->items[index] == nullptr) {
+			index++;
+		}
+		return index != other.index;
+	}
+	const TValue& operator*() const {
+		return dictionary->items[index]->Value();
+	}
+	DictionaryValueIterator<TKey, TValue>& operator++() {
+		index++;
+		return *this;
+	}
+};
+
+template <typename TKey, typename TValue>
+class KeyValuePairIterator {
+private:
+	const Dictionary<TKey, TValue>* dictionary;
+	int index;
+public:
+	KeyValuePairIterator(const Dictionary<TKey, TValue>* dictionary, int index)
+		: dictionary{dictionary}, index{index} {
+	}
+	bool operator!=(KeyValuePairIterator<TKey, TValue>& other) {
+		while(index < dictionary->capacity && dictionary->items[index] == nullptr) {
+			index++;
+		}
+		return index != other.index;
+	}
+	const KeyValuePair<TKey, TValue>& operator*() const {
+		return *(dictionary->items[index]);
+	}
+	KeyValuePairIterator<TKey, TValue>& operator++() {
+		index++;
+		return *this;
+	}
+};
 #endif // DICTIONARY_HPP
